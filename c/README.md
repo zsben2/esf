@@ -83,11 +83,9 @@ Thu Jun 27 16:48:53 2024 - main process use time: 5 min 5.902000 s
 **执行 `gmp_Si_static.exe` 的日志**
 
 ```log
-Thu Jun 27 16:48:54 2024 - 每个 mpq_t 变量至少消耗 sizeof(mpq_t) = 32 B 的空间
-Thu Jun 27 16:48:54 2024 - 当前算法计算的 S 将会消耗 (N * N * K / 2 + N) * 32 B = 82157255616.000000 GB 的空间
-Thu Jun 27 16:48:54 2024 - 但会保存所有原始数据以便再用
-Thu Jun 27 16:48:54 2024 - 实际上就连开空间的那一步都不能成功执行
-Thu Jun 27 16:49:42 2024 - read T process use time: 48.102001 s
+Thu Jun 27 22:45:50 2024 - 当前算法一次性开辟 N * N * K / 2 = 75 GB 空间然后再滚动释放
+Thu Jun 27 22:45:50 2024 - 也是开不了的
+Thu Jun 27 22:47:00 2024 - read T process use time: 1 min 9.558000 s
 ```
 
 继而电脑死机
