@@ -36,6 +36,8 @@ for (k = 1; k <= K; k++) {
 
 当前是第 1 版串行代码，需要消耗极大量的内存空间，以至于根本不可能跑下来。下面是一次试跑的日志，可参考其程序运行时间和执行的步骤。
 
+**执行 `gmp_T_static.exe` 的日志**
+
 ```log
 Thu Jun 27 16:43:47 2024 - step 1, k = 1
 Thu Jun 27 16:43:47 2024 - k = 1, process use time: 0.103000 s
@@ -76,9 +78,16 @@ Thu Jun 27 16:48:52 2024 - S[1][1] = 1
 Thu Jun 27 16:48:53 2024 - S[3][2] = 1
 Thu Jun 27 16:48:53 2024 - check & free T process use time: 1.028000 s
 Thu Jun 27 16:48:53 2024 - main process use time: 5 min 5.902000 s
+```
+
+**执行 `gmp_Si_static.exe` 的日志**
+
+```log
 Thu Jun 27 16:48:54 2024 - 每个 mpq_t 变量至少消耗 sizeof(mpq_t) = 32 B 的空间
 Thu Jun 27 16:48:54 2024 - 当前算法计算的 S 将会消耗 (N * N * K / 2 + N) * 32 B = 82157255616.000000 GB 的空间
 Thu Jun 27 16:48:54 2024 - 但会保存所有原始数据以便再用
 Thu Jun 27 16:48:54 2024 - 实际上就连开空间的那一步都不能成功执行
 Thu Jun 27 16:49:42 2024 - read T process use time: 48.102001 s
 ```
+
+继而电脑死机
