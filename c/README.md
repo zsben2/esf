@@ -30,27 +30,6 @@ for (k = 1; k <= K; k++) {
 } 
 ```
 
-### 数组 S 的元素缓存文件
-
-文件 `output/S.bin` 中保存了数组 `S[n][i][k]` 的所有元素。数组索引的有效范围可参考：
-
-```c
-for (n = 2; n <= N; n++) {
-    max_K = min(n - 1, (int) (E * log(n) + E))
-    // 1 <= i < n
-    for (i = 1; i < n; i++) {
-        // k = 1, S[n][i][1] = S[n-1][i][1] + 1/n
-        save_to(file, S2i_[1], n, i, 1, -1);
-        // S[n][i][k] = T[n][k] - 1/i * S[n][i][k-1] for 2 <= k <= max_k
-        for (k = 2; k <= max_k; k++)
-            save_to(file, S2i_[k], n, i, k, -1);
-    }
-    // S[n][n][k] = T[n-1][k] for 1 <= k <= max_k
-    for (k = 1; k <= max_k; k++)
-        save_to(file, S2i_[k], n, n, k, -1);
-}
-```
-
 ### 日志文件
 
 文件 `output/log.txt` 中会打印出程序执行期间的一些日志。
