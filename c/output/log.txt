@@ -4043,3 +4043,1009 @@ Fri Jun 28 11:23:50 2024 - n = 498, Fri Jun 28 11:23:50 2024 - process use time:
 Fri Jun 28 11:23:50 2024 - n = 499, Fri Jun 28 11:23:50 2024 - process use time: 0.204000 s
 Fri Jun 28 11:23:50 2024 - n = 500, Fri Jun 28 11:23:50 2024 - process use time: 0.206000 s
 Fri Jun 28 11:23:50 2024 - n = 501, Fri Jun 28 11:23:50 2024 - process use time: 0.205000 s
+Fri Jun 28 12:24:16 2024 - 当前算法保存各级 S1_1, 以便从任意 n 开始重新运行，并保存出为整数的 S[n][i][k]
+Fri Jun 28 12:24:52 2024 - read T process use time: 35.858002 s
+Fri Jun 28 12:24:52 2024 - 
+step 1: initial finished
+Fri Jun 28 12:24:52 2024 - process use time: 0.006000 s
+Fri Jun 28 12:24:52 2024 - 
+Fri Jun 28 12:24:53 2024 - S[2][2][1] = 1
+Fri Jun 28 12:24:53 2024 - n = 2, Fri Jun 28 12:24:53 2024 - save_nth_S1_1 process use time: 0.220000 s
+Fri Jun 28 12:24:53 2024 - process use time: 0.426000 s
+Fri Jun 28 12:24:53 2024 - n = 3, Fri Jun 28 12:24:53 2024 - save_nth_S1_1 process use time: 0.056000 s
+Fri Jun 28 12:24:53 2024 - process use time: 0.070000 s
+Fri Jun 28 12:24:53 2024 - S[4][4][2] = 1
+Fri Jun 28 12:24:53 2024 - n = 4, Fri Jun 28 12:24:53 2024 - save_nth_S1_1 process use time: 0.047000 s
+Fri Jun 28 12:24:53 2024 - process use time: 0.130000 s
+Fri Jun 28 12:24:53 2024 - n = 5, Fri Jun 28 12:24:53 2024 - save_nth_S1_1 process use time: 0.036000 s
+Fri Jun 28 12:24:53 2024 - process use time: 0.073000 s
+Fri Jun 28 12:24:53 2024 - n = 6, Fri Jun 28 12:24:53 2024 - save_nth_S1_1 process use time: 0.032000 s
+Fri Jun 28 12:24:53 2024 - process use time: 0.046000 s
+Fri Jun 28 12:24:53 2024 - n = 7, Fri Jun 28 12:24:53 2024 - save_nth_S1_1 process use time: 0.050000 s
+Fri Jun 28 12:24:53 2024 - process use time: 0.060000 s
+Fri Jun 28 12:24:53 2024 - n = 8, Fri Jun 28 12:24:53 2024 - save_nth_S1_1 process use time: 0.040000 s
+Fri Jun 28 12:24:53 2024 - process use time: 0.049000 s
+Fri Jun 28 12:24:53 2024 - n = 9, Fri Jun 28 12:24:53 2024 - save_nth_S1_1 process use time: 0.036000 s
+Fri Jun 28 12:24:53 2024 - process use time: 0.051000 s
+Fri Jun 28 12:24:53 2024 - n = 10, Fri Jun 28 12:24:53 2024 - save_nth_S1_1 process use time: 0.040000 s
+Fri Jun 28 12:24:53 2024 - process use time: 0.050000 s
+Fri Jun 28 12:24:53 2024 - n = 11, Fri Jun 28 12:24:53 2024 - save_nth_S1_1 process use time: 0.046000 s
+Fri Jun 28 12:24:53 2024 - process use time: 0.057000 s
+Fri Jun 28 12:24:53 2024 - n = 12, Fri Jun 28 12:24:53 2024 - save_nth_S1_1 process use time: 0.052000 s
+Fri Jun 28 12:24:54 2024 - process use time: 0.129000 s
+Fri Jun 28 12:24:54 2024 - n = 13, Fri Jun 28 12:24:54 2024 - save_nth_S1_1 process use time: 0.037000 s
+Fri Jun 28 12:24:54 2024 - process use time: 0.059000 s
+Fri Jun 28 12:24:54 2024 - n = 14, Fri Jun 28 12:24:54 2024 - save_nth_S1_1 process use time: 0.036000 s
+Fri Jun 28 12:24:54 2024 - process use time: 0.049000 s
+Fri Jun 28 12:24:54 2024 - n = 15, Fri Jun 28 12:24:54 2024 - save_nth_S1_1 process use time: 0.050000 s
+Fri Jun 28 12:24:54 2024 - process use time: 0.061000 s
+Fri Jun 28 12:24:54 2024 - n = 16, Fri Jun 28 12:24:54 2024 - save_nth_S1_1 process use time: 0.051000 s
+Fri Jun 28 12:24:54 2024 - process use time: 0.063000 s
+Fri Jun 28 12:24:54 2024 - n = 17, Fri Jun 28 12:24:54 2024 - save_nth_S1_1 process use time: 0.036000 s
+Fri Jun 28 12:24:54 2024 - process use time: 0.047000 s
+Fri Jun 28 12:24:54 2024 - n = 18, Fri Jun 28 12:24:54 2024 - save_nth_S1_1 process use time: 0.046000 s
+Fri Jun 28 12:24:54 2024 - process use time: 0.059000 s
+Fri Jun 28 12:24:54 2024 - n = 19, Fri Jun 28 12:24:54 2024 - save_nth_S1_1 process use time: 0.039000 s
+Fri Jun 28 12:24:54 2024 - process use time: 0.063000 s
+Fri Jun 28 12:24:54 2024 - n = 20, Fri Jun 28 12:24:54 2024 - save_nth_S1_1 process use time: 0.089000 s
+Fri Jun 28 12:24:54 2024 - process use time: 0.101000 s
+Fri Jun 28 12:24:54 2024 - n = 21, Fri Jun 28 12:24:54 2024 - save_nth_S1_1 process use time: 0.051000 s
+Fri Jun 28 12:24:54 2024 - process use time: 0.061000 s
+Fri Jun 28 12:24:54 2024 - n = 22, Fri Jun 28 12:24:54 2024 - save_nth_S1_1 process use time: 0.039000 s
+Fri Jun 28 12:24:54 2024 - process use time: 0.050000 s
+Fri Jun 28 12:24:54 2024 - n = 23, Fri Jun 28 12:24:54 2024 - save_nth_S1_1 process use time: 0.037000 s
+Fri Jun 28 12:24:54 2024 - process use time: 0.049000 s
+Fri Jun 28 12:24:54 2024 - n = 24, Fri Jun 28 12:24:54 2024 - save_nth_S1_1 process use time: 0.039000 s
+Fri Jun 28 12:24:54 2024 - process use time: 0.050000 s
+Fri Jun 28 12:24:54 2024 - n = 25, Fri Jun 28 12:24:54 2024 - save_nth_S1_1 process use time: 0.037000 s
+Fri Jun 28 12:24:54 2024 - process use time: 0.048000 s
+Fri Jun 28 12:24:54 2024 - n = 26, Fri Jun 28 12:24:54 2024 - save_nth_S1_1 process use time: 0.041000 s
+Fri Jun 28 12:24:54 2024 - process use time: 0.049000 s
+Fri Jun 28 12:24:54 2024 - n = 27, Fri Jun 28 12:24:54 2024 - save_nth_S1_1 process use time: 0.050000 s
+Fri Jun 28 12:24:54 2024 - process use time: 0.060000 s
+Fri Jun 28 12:24:54 2024 - n = 28, Fri Jun 28 12:24:54 2024 - save_nth_S1_1 process use time: 0.042000 s
+Fri Jun 28 12:24:54 2024 - process use time: 0.051000 s
+Fri Jun 28 12:24:54 2024 - n = 29, Fri Jun 28 12:24:55 2024 - save_nth_S1_1 process use time: 0.041000 s
+Fri Jun 28 12:24:55 2024 - process use time: 0.089000 s
+Fri Jun 28 12:24:55 2024 - n = 30, Fri Jun 28 12:24:55 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:24:55 2024 - process use time: 0.024000 s
+Fri Jun 28 12:24:55 2024 - n = 31, Fri Jun 28 12:24:55 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:24:55 2024 - process use time: 0.009000 s
+Fri Jun 28 12:24:55 2024 - n = 32, Fri Jun 28 12:24:55 2024 - save_nth_S1_1 process use time: 0.005000 s
+Fri Jun 28 12:24:55 2024 - process use time: 0.015000 s
+Fri Jun 28 12:24:55 2024 - n = 33, Fri Jun 28 12:24:55 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:24:55 2024 - process use time: 0.014000 s
+Fri Jun 28 12:24:55 2024 - n = 34, Fri Jun 28 12:24:55 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:24:55 2024 - process use time: 0.013000 s
+Fri Jun 28 12:24:55 2024 - n = 35, Fri Jun 28 12:24:55 2024 - save_nth_S1_1 process use time: 0.001000 s
+Fri Jun 28 12:24:55 2024 - process use time: 0.012000 s
+Fri Jun 28 12:24:55 2024 - n = 36, Fri Jun 28 12:24:55 2024 - save_nth_S1_1 process use time: 0.004000 s
+Fri Jun 28 12:24:55 2024 - process use time: 0.011000 s
+Fri Jun 28 12:24:55 2024 - n = 37, Fri Jun 28 12:24:55 2024 - save_nth_S1_1 process use time: 0.010000 s
+Fri Jun 28 12:24:55 2024 - process use time: 0.025000 s
+Fri Jun 28 12:24:55 2024 - n = 38, Fri Jun 28 12:24:55 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:24:55 2024 - process use time: 0.012000 s
+Fri Jun 28 12:24:55 2024 - n = 39, Fri Jun 28 12:24:55 2024 - save_nth_S1_1 process use time: 0.005000 s
+Fri Jun 28 12:24:55 2024 - process use time: 0.014000 s
+Fri Jun 28 12:24:55 2024 - n = 40, Fri Jun 28 12:24:55 2024 - save_nth_S1_1 process use time: 0.007000 s
+Fri Jun 28 12:24:55 2024 - process use time: 0.016000 s
+Fri Jun 28 12:24:55 2024 - n = 41, Fri Jun 28 12:24:55 2024 - save_nth_S1_1 process use time: 0.009000 s
+Fri Jun 28 12:24:55 2024 - process use time: 0.019000 s
+Fri Jun 28 12:24:55 2024 - n = 42, Fri Jun 28 12:24:55 2024 - save_nth_S1_1 process use time: 0.001000 s
+Fri Jun 28 12:24:55 2024 - process use time: 0.012000 s
+Fri Jun 28 12:24:55 2024 - n = 43, Fri Jun 28 12:24:55 2024 - save_nth_S1_1 process use time: 0.044000 s
+Fri Jun 28 12:24:55 2024 - process use time: 0.051000 s
+Fri Jun 28 12:24:55 2024 - n = 44, Fri Jun 28 12:24:55 2024 - save_nth_S1_1 process use time: 0.004000 s
+Fri Jun 28 12:24:55 2024 - process use time: 0.015000 s
+Fri Jun 28 12:24:55 2024 - n = 45, Fri Jun 28 12:24:55 2024 - save_nth_S1_1 process use time: 0.010000 s
+Fri Jun 28 12:24:55 2024 - process use time: 0.020000 s
+Fri Jun 28 12:24:55 2024 - n = 46, Fri Jun 28 12:24:55 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:24:55 2024 - process use time: 0.011000 s
+Fri Jun 28 12:24:55 2024 - n = 47, Fri Jun 28 12:24:55 2024 - save_nth_S1_1 process use time: 0.015000 s
+Fri Jun 28 12:24:55 2024 - process use time: 0.025000 s
+Fri Jun 28 12:24:55 2024 - n = 48, Fri Jun 28 12:24:55 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:24:55 2024 - process use time: 0.012000 s
+Fri Jun 28 12:24:55 2024 - n = 49, Fri Jun 28 12:24:55 2024 - save_nth_S1_1 process use time: 0.015000 s
+Fri Jun 28 12:24:55 2024 - process use time: 0.027000 s
+Fri Jun 28 12:24:55 2024 - n = 50, Fri Jun 28 12:24:55 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:24:55 2024 - process use time: 0.011000 s
+Fri Jun 28 12:24:55 2024 - n = 51, Fri Jun 28 12:24:55 2024 - save_nth_S1_1 process use time: 0.005000 s
+Fri Jun 28 12:24:55 2024 - process use time: 0.020000 s
+Fri Jun 28 12:24:55 2024 - n = 52, Fri Jun 28 12:24:55 2024 - save_nth_S1_1 process use time: 0.007000 s
+Fri Jun 28 12:24:55 2024 - process use time: 0.017000 s
+Fri Jun 28 12:24:55 2024 - n = 53, Fri Jun 28 12:24:55 2024 - save_nth_S1_1 process use time: 0.010000 s
+Fri Jun 28 12:24:55 2024 - process use time: 0.019000 s
+Fri Jun 28 12:24:55 2024 - n = 54, Fri Jun 28 12:24:55 2024 - save_nth_S1_1 process use time: 0.010000 s
+Fri Jun 28 12:24:55 2024 - process use time: 0.021000 s
+Fri Jun 28 12:24:55 2024 - n = 55, Fri Jun 28 12:24:55 2024 - save_nth_S1_1 process use time: 0.006000 s
+Fri Jun 28 12:24:55 2024 - process use time: 0.016000 s
+Fri Jun 28 12:24:55 2024 - n = 56, Fri Jun 28 12:24:55 2024 - save_nth_S1_1 process use time: 0.014000 s
+Fri Jun 28 12:24:55 2024 - process use time: 0.021000 s
+Fri Jun 28 12:24:55 2024 - n = 57, Fri Jun 28 12:24:55 2024 - save_nth_S1_1 process use time: 0.004000 s
+Fri Jun 28 12:24:55 2024 - process use time: 0.015000 s
+Fri Jun 28 12:24:55 2024 - n = 58, Fri Jun 28 12:24:55 2024 - save_nth_S1_1 process use time: 0.006000 s
+Fri Jun 28 12:24:55 2024 - process use time: 0.019000 s
+Fri Jun 28 12:24:55 2024 - n = 59, Fri Jun 28 12:24:55 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:24:55 2024 - process use time: 0.013000 s
+Fri Jun 28 12:24:55 2024 - n = 60, Fri Jun 28 12:24:55 2024 - save_nth_S1_1 process use time: 0.015000 s
+Fri Jun 28 12:24:55 2024 - process use time: 0.027000 s
+Fri Jun 28 12:24:55 2024 - n = 61, Fri Jun 28 12:24:55 2024 - save_nth_S1_1 process use time: 0.028000 s
+Fri Jun 28 12:24:55 2024 - process use time: 0.039000 s
+Fri Jun 28 12:24:55 2024 - n = 62, Fri Jun 28 12:24:55 2024 - save_nth_S1_1 process use time: 0.005000 s
+Fri Jun 28 12:24:55 2024 - process use time: 0.015000 s
+Fri Jun 28 12:24:55 2024 - n = 63, Fri Jun 28 12:24:55 2024 - save_nth_S1_1 process use time: 0.009000 s
+Fri Jun 28 12:24:55 2024 - process use time: 0.018000 s
+Fri Jun 28 12:24:55 2024 - n = 64, Fri Jun 28 12:24:55 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:24:55 2024 - process use time: 0.014000 s
+Fri Jun 28 12:24:55 2024 - n = 65, Fri Jun 28 12:24:55 2024 - save_nth_S1_1 process use time: 0.001000 s
+Fri Jun 28 12:24:55 2024 - process use time: 0.013000 s
+Fri Jun 28 12:24:55 2024 - n = 66, Fri Jun 28 12:24:55 2024 - save_nth_S1_1 process use time: 0.005000 s
+Fri Jun 28 12:24:55 2024 - process use time: 0.021000 s
+Fri Jun 28 12:24:55 2024 - n = 67, Fri Jun 28 12:24:55 2024 - save_nth_S1_1 process use time: 0.028000 s
+Fri Jun 28 12:24:55 2024 - process use time: 0.040000 s
+Fri Jun 28 12:24:55 2024 - n = 68, Fri Jun 28 12:24:55 2024 - save_nth_S1_1 process use time: 0.001000 s
+Fri Jun 28 12:24:55 2024 - process use time: 0.013000 s
+Fri Jun 28 12:24:55 2024 - n = 69, Fri Jun 28 12:24:55 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:24:55 2024 - process use time: 0.012000 s
+Fri Jun 28 12:24:55 2024 - n = 70, Fri Jun 28 12:24:55 2024 - save_nth_S1_1 process use time: 0.001000 s
+Fri Jun 28 12:24:55 2024 - process use time: 0.014000 s
+Fri Jun 28 12:24:55 2024 - n = 71, Fri Jun 28 12:24:55 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:24:55 2024 - process use time: 0.015000 s
+Fri Jun 28 12:24:55 2024 - n = 72, Fri Jun 28 12:24:55 2024 - save_nth_S1_1 process use time: 0.001000 s
+Fri Jun 28 12:24:55 2024 - process use time: 0.016000 s
+Fri Jun 28 12:24:55 2024 - n = 73, Fri Jun 28 12:24:55 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:24:55 2024 - process use time: 0.012000 s
+Fri Jun 28 12:24:55 2024 - n = 74, Fri Jun 28 12:24:55 2024 - save_nth_S1_1 process use time: 0.006000 s
+Fri Jun 28 12:24:55 2024 - process use time: 0.022000 s
+Fri Jun 28 12:24:55 2024 - n = 75, Fri Jun 28 12:24:55 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:24:55 2024 - process use time: 0.014000 s
+Fri Jun 28 12:24:55 2024 - n = 76, Fri Jun 28 12:24:55 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:24:55 2024 - process use time: 0.015000 s
+Fri Jun 28 12:24:55 2024 - n = 77, Fri Jun 28 12:24:55 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:24:55 2024 - process use time: 0.013000 s
+Fri Jun 28 12:24:55 2024 - n = 78, Fri Jun 28 12:24:55 2024 - save_nth_S1_1 process use time: 0.007000 s
+Fri Jun 28 12:24:55 2024 - process use time: 0.020000 s
+Fri Jun 28 12:24:55 2024 - n = 79, Fri Jun 28 12:24:55 2024 - save_nth_S1_1 process use time: 0.005000 s
+Fri Jun 28 12:24:55 2024 - process use time: 0.015000 s
+Fri Jun 28 12:24:55 2024 - n = 80, Fri Jun 28 12:24:55 2024 - save_nth_S1_1 process use time: 0.008000 s
+Fri Jun 28 12:24:55 2024 - process use time: 0.019000 s
+Fri Jun 28 12:24:55 2024 - n = 81, Fri Jun 28 12:24:55 2024 - save_nth_S1_1 process use time: 0.006000 s
+Fri Jun 28 12:24:55 2024 - process use time: 0.019000 s
+Fri Jun 28 12:24:56 2024 - n = 82, Fri Jun 28 12:24:56 2024 - save_nth_S1_1 process use time: 0.004000 s
+Fri Jun 28 12:24:56 2024 - process use time: 0.019000 s
+Fri Jun 28 12:24:56 2024 - n = 83, Fri Jun 28 12:24:56 2024 - save_nth_S1_1 process use time: 0.011000 s
+Fri Jun 28 12:24:56 2024 - process use time: 0.022000 s
+Fri Jun 28 12:24:56 2024 - n = 84, Fri Jun 28 12:24:56 2024 - save_nth_S1_1 process use time: 0.004000 s
+Fri Jun 28 12:24:56 2024 - process use time: 0.015000 s
+Fri Jun 28 12:24:56 2024 - n = 85, Fri Jun 28 12:24:56 2024 - save_nth_S1_1 process use time: 0.005000 s
+Fri Jun 28 12:24:56 2024 - process use time: 0.020000 s
+Fri Jun 28 12:24:56 2024 - n = 86, Fri Jun 28 12:24:56 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:24:56 2024 - process use time: 0.016000 s
+Fri Jun 28 12:24:56 2024 - n = 87, Fri Jun 28 12:24:56 2024 - save_nth_S1_1 process use time: 0.007000 s
+Fri Jun 28 12:24:56 2024 - process use time: 0.020000 s
+Fri Jun 28 12:24:56 2024 - n = 88, Fri Jun 28 12:24:56 2024 - save_nth_S1_1 process use time: 0.004000 s
+Fri Jun 28 12:24:56 2024 - process use time: 0.016000 s
+Fri Jun 28 12:24:56 2024 - n = 89, Fri Jun 28 12:24:56 2024 - save_nth_S1_1 process use time: 0.009000 s
+Fri Jun 28 12:24:56 2024 - process use time: 0.021000 s
+Fri Jun 28 12:24:56 2024 - n = 90, Fri Jun 28 12:24:56 2024 - save_nth_S1_1 process use time: 0.030000 s
+Fri Jun 28 12:24:56 2024 - process use time: 0.045000 s
+Fri Jun 28 12:24:56 2024 - n = 91, Fri Jun 28 12:24:56 2024 - save_nth_S1_1 process use time: 0.005000 s
+Fri Jun 28 12:24:56 2024 - process use time: 0.016000 s
+Fri Jun 28 12:24:56 2024 - n = 92, Fri Jun 28 12:24:56 2024 - save_nth_S1_1 process use time: 0.006000 s
+Fri Jun 28 12:24:56 2024 - process use time: 0.018000 s
+Fri Jun 28 12:24:56 2024 - n = 93, Fri Jun 28 12:24:56 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:24:56 2024 - process use time: 0.017000 s
+Fri Jun 28 12:24:56 2024 - n = 94, Fri Jun 28 12:24:56 2024 - save_nth_S1_1 process use time: 0.001000 s
+Fri Jun 28 12:24:56 2024 - process use time: 0.016000 s
+Fri Jun 28 12:24:56 2024 - n = 95, Fri Jun 28 12:24:56 2024 - save_nth_S1_1 process use time: 0.005000 s
+Fri Jun 28 12:24:56 2024 - process use time: 0.018000 s
+Fri Jun 28 12:24:56 2024 - n = 96, Fri Jun 28 12:24:56 2024 - save_nth_S1_1 process use time: 0.004000 s
+Fri Jun 28 12:24:56 2024 - process use time: 0.016000 s
+Fri Jun 28 12:24:56 2024 - n = 97, Fri Jun 28 12:24:56 2024 - save_nth_S1_1 process use time: 0.017000 s
+Fri Jun 28 12:24:56 2024 - process use time: 0.030000 s
+Fri Jun 28 12:24:56 2024 - n = 98, Fri Jun 28 12:24:56 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:24:56 2024 - process use time: 0.017000 s
+Fri Jun 28 12:24:56 2024 - n = 99, Fri Jun 28 12:24:56 2024 - save_nth_S1_1 process use time: 0.005000 s
+Fri Jun 28 12:24:56 2024 - process use time: 0.019000 s
+Fri Jun 28 12:24:56 2024 - n = 100, Fri Jun 28 12:24:56 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:24:56 2024 - process use time: 0.018000 s
+Fri Jun 28 12:24:56 2024 - n = 101, Fri Jun 28 12:24:56 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:24:56 2024 - process use time: 0.016000 s
+Fri Jun 28 12:24:56 2024 - n = 102, Fri Jun 28 12:24:56 2024 - save_nth_S1_1 process use time: 0.006000 s
+Fri Jun 28 12:24:56 2024 - process use time: 0.020000 s
+Fri Jun 28 12:24:56 2024 - n = 103, Fri Jun 28 12:24:56 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:24:56 2024 - process use time: 0.015000 s
+Fri Jun 28 12:24:56 2024 - n = 104, Fri Jun 28 12:24:56 2024 - save_nth_S1_1 process use time: 0.006000 s
+Fri Jun 28 12:24:56 2024 - process use time: 0.025000 s
+Fri Jun 28 12:24:56 2024 - n = 105, Fri Jun 28 12:24:56 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:24:56 2024 - process use time: 0.016000 s
+Fri Jun 28 12:24:56 2024 - n = 106, Fri Jun 28 12:24:56 2024 - save_nth_S1_1 process use time: 0.001000 s
+Fri Jun 28 12:24:56 2024 - process use time: 0.019000 s
+Fri Jun 28 12:24:56 2024 - n = 107, Fri Jun 28 12:24:56 2024 - save_nth_S1_1 process use time: 0.010000 s
+Fri Jun 28 12:24:56 2024 - process use time: 0.026000 s
+Fri Jun 28 12:24:56 2024 - n = 108, Fri Jun 28 12:24:56 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:24:56 2024 - process use time: 0.018000 s
+Fri Jun 28 12:24:56 2024 - n = 109, Fri Jun 28 12:24:56 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:24:56 2024 - process use time: 0.017000 s
+Fri Jun 28 12:24:56 2024 - n = 110, Fri Jun 28 12:24:56 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:24:56 2024 - process use time: 0.018000 s
+Fri Jun 28 12:24:56 2024 - n = 111, Fri Jun 28 12:24:56 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:24:56 2024 - process use time: 0.021000 s
+Fri Jun 28 12:24:56 2024 - n = 112, Fri Jun 28 12:24:56 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:24:56 2024 - process use time: 0.018000 s
+Fri Jun 28 12:24:56 2024 - n = 113, Fri Jun 28 12:24:56 2024 - save_nth_S1_1 process use time: 0.001000 s
+Fri Jun 28 12:24:56 2024 - process use time: 0.016000 s
+Fri Jun 28 12:24:56 2024 - n = 114, Fri Jun 28 12:24:56 2024 - save_nth_S1_1 process use time: 0.005000 s
+Fri Jun 28 12:24:56 2024 - process use time: 0.022000 s
+Fri Jun 28 12:24:56 2024 - n = 115, Fri Jun 28 12:24:56 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:24:56 2024 - process use time: 0.017000 s
+Fri Jun 28 12:24:56 2024 - n = 116, Fri Jun 28 12:24:56 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:24:56 2024 - process use time: 0.020000 s
+Fri Jun 28 12:24:56 2024 - n = 117, Fri Jun 28 12:24:56 2024 - save_nth_S1_1 process use time: 0.008000 s
+Fri Jun 28 12:24:56 2024 - process use time: 0.026000 s
+Fri Jun 28 12:24:56 2024 - n = 118, Fri Jun 28 12:24:56 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:24:56 2024 - process use time: 0.018000 s
+Fri Jun 28 12:24:56 2024 - n = 119, Fri Jun 28 12:24:56 2024 - save_nth_S1_1 process use time: 0.001000 s
+Fri Jun 28 12:24:56 2024 - process use time: 0.018000 s
+Fri Jun 28 12:24:56 2024 - n = 120, Fri Jun 28 12:24:56 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:24:56 2024 - process use time: 0.016000 s
+Fri Jun 28 12:24:56 2024 - n = 121, Fri Jun 28 12:24:56 2024 - save_nth_S1_1 process use time: 0.004000 s
+Fri Jun 28 12:24:56 2024 - process use time: 0.023000 s
+Fri Jun 28 12:24:56 2024 - n = 122, Fri Jun 28 12:24:56 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:24:56 2024 - process use time: 0.021000 s
+Fri Jun 28 12:24:56 2024 - n = 123, Fri Jun 28 12:24:56 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:24:56 2024 - process use time: 0.019000 s
+Fri Jun 28 12:24:56 2024 - n = 124, Fri Jun 28 12:24:57 2024 - save_nth_S1_1 process use time: 0.178000 s
+Fri Jun 28 12:24:57 2024 - process use time: 0.195000 s
+Fri Jun 28 12:24:57 2024 - n = 125, Fri Jun 28 12:24:57 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:24:57 2024 - process use time: 0.020000 s
+Fri Jun 28 12:24:57 2024 - n = 126, Fri Jun 28 12:24:57 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:24:57 2024 - process use time: 0.020000 s
+Fri Jun 28 12:24:57 2024 - n = 127, Fri Jun 28 12:24:57 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:24:57 2024 - process use time: 0.023000 s
+Fri Jun 28 12:24:57 2024 - n = 128, Fri Jun 28 12:24:57 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:24:57 2024 - process use time: 0.021000 s
+Fri Jun 28 12:24:57 2024 - n = 129, Fri Jun 28 12:24:57 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:24:57 2024 - process use time: 0.020000 s
+Fri Jun 28 12:24:57 2024 - n = 130, Fri Jun 28 12:24:57 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:24:57 2024 - process use time: 0.021000 s
+Fri Jun 28 12:24:57 2024 - n = 131, Fri Jun 28 12:24:57 2024 - save_nth_S1_1 process use time: 0.001000 s
+Fri Jun 28 12:24:57 2024 - process use time: 0.017000 s
+Fri Jun 28 12:24:57 2024 - n = 132, Fri Jun 28 12:24:57 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:24:57 2024 - process use time: 0.022000 s
+Fri Jun 28 12:24:57 2024 - n = 133, Fri Jun 28 12:24:57 2024 - save_nth_S1_1 process use time: 0.006000 s
+Fri Jun 28 12:24:57 2024 - process use time: 0.027000 s
+Fri Jun 28 12:24:57 2024 - n = 134, Fri Jun 28 12:24:57 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:24:57 2024 - process use time: 0.029000 s
+Fri Jun 28 12:24:57 2024 - n = 135, Fri Jun 28 12:24:57 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:24:57 2024 - process use time: 0.023000 s
+Fri Jun 28 12:24:57 2024 - n = 136, Fri Jun 28 12:24:57 2024 - save_nth_S1_1 process use time: 0.001000 s
+Fri Jun 28 12:24:57 2024 - process use time: 0.021000 s
+Fri Jun 28 12:24:57 2024 - n = 137, Fri Jun 28 12:24:57 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:24:57 2024 - process use time: 0.024000 s
+Fri Jun 28 12:24:57 2024 - n = 138, Fri Jun 28 12:24:57 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:24:57 2024 - process use time: 0.020000 s
+Fri Jun 28 12:24:57 2024 - n = 139, Fri Jun 28 12:24:57 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:24:57 2024 - process use time: 0.021000 s
+Fri Jun 28 12:24:57 2024 - n = 140, Fri Jun 28 12:24:57 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:24:57 2024 - process use time: 0.026000 s
+Fri Jun 28 12:24:57 2024 - n = 141, Fri Jun 28 12:24:57 2024 - save_nth_S1_1 process use time: 0.001000 s
+Fri Jun 28 12:24:57 2024 - process use time: 0.021000 s
+Fri Jun 28 12:24:57 2024 - n = 142, Fri Jun 28 12:24:57 2024 - save_nth_S1_1 process use time: 0.013000 s
+Fri Jun 28 12:24:57 2024 - process use time: 0.034000 s
+Fri Jun 28 12:24:57 2024 - n = 143, Fri Jun 28 12:24:57 2024 - save_nth_S1_1 process use time: 0.004000 s
+Fri Jun 28 12:24:57 2024 - process use time: 0.025000 s
+Fri Jun 28 12:24:57 2024 - n = 144, Fri Jun 28 12:24:57 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:24:57 2024 - process use time: 0.027000 s
+Fri Jun 28 12:24:57 2024 - n = 145, Fri Jun 28 12:24:57 2024 - save_nth_S1_1 process use time: 0.004000 s
+Fri Jun 28 12:24:57 2024 - process use time: 0.023000 s
+Fri Jun 28 12:24:57 2024 - n = 146, Fri Jun 28 12:24:57 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:24:57 2024 - process use time: 0.022000 s
+Fri Jun 28 12:24:57 2024 - n = 147, Fri Jun 28 12:24:57 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:24:57 2024 - process use time: 0.026000 s
+Fri Jun 28 12:24:57 2024 - n = 148, Fri Jun 28 12:24:57 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:24:57 2024 - process use time: 0.026000 s
+Fri Jun 28 12:24:57 2024 - n = 149, Fri Jun 28 12:24:57 2024 - save_nth_S1_1 process use time: 0.022000 s
+Fri Jun 28 12:24:57 2024 - process use time: 0.090000 s
+Fri Jun 28 12:24:57 2024 - n = 150, Fri Jun 28 12:24:57 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:24:57 2024 - process use time: 0.024000 s
+Fri Jun 28 12:24:57 2024 - n = 151, Fri Jun 28 12:24:57 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:24:57 2024 - process use time: 0.025000 s
+Fri Jun 28 12:24:57 2024 - n = 152, Fri Jun 28 12:24:57 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:24:57 2024 - process use time: 0.024000 s
+Fri Jun 28 12:24:57 2024 - n = 153, Fri Jun 28 12:24:57 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:24:57 2024 - process use time: 0.023000 s
+Fri Jun 28 12:24:57 2024 - n = 154, Fri Jun 28 12:24:57 2024 - save_nth_S1_1 process use time: 0.001000 s
+Fri Jun 28 12:24:57 2024 - process use time: 0.029000 s
+Fri Jun 28 12:24:57 2024 - n = 155, Fri Jun 28 12:24:57 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:24:57 2024 - process use time: 0.028000 s
+Fri Jun 28 12:24:57 2024 - n = 156, Fri Jun 28 12:24:57 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:24:57 2024 - process use time: 0.023000 s
+Fri Jun 28 12:24:57 2024 - n = 157, Fri Jun 28 12:24:57 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:24:57 2024 - process use time: 0.024000 s
+Fri Jun 28 12:24:57 2024 - n = 158, Fri Jun 28 12:24:57 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:24:57 2024 - process use time: 0.024000 s
+Fri Jun 28 12:24:57 2024 - n = 159, Fri Jun 28 12:24:57 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:24:57 2024 - process use time: 0.027000 s
+Fri Jun 28 12:24:57 2024 - n = 160, Fri Jun 28 12:24:57 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:24:57 2024 - process use time: 0.025000 s
+Fri Jun 28 12:24:57 2024 - n = 161, Fri Jun 28 12:24:57 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:24:57 2024 - process use time: 0.027000 s
+Fri Jun 28 12:24:57 2024 - n = 162, Fri Jun 28 12:24:57 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:24:57 2024 - process use time: 0.024000 s
+Fri Jun 28 12:24:58 2024 - n = 163, Fri Jun 28 12:24:58 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:24:58 2024 - process use time: 0.028000 s
+Fri Jun 28 12:24:58 2024 - n = 164, Fri Jun 28 12:24:58 2024 - save_nth_S1_1 process use time: 0.008000 s
+Fri Jun 28 12:24:58 2024 - process use time: 0.033000 s
+Fri Jun 28 12:24:58 2024 - n = 165, Fri Jun 28 12:24:58 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:24:58 2024 - process use time: 0.026000 s
+Fri Jun 28 12:24:58 2024 - n = 166, Fri Jun 28 12:24:58 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:24:58 2024 - process use time: 0.027000 s
+Fri Jun 28 12:24:58 2024 - n = 167, Fri Jun 28 12:24:58 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:24:58 2024 - process use time: 0.028000 s
+Fri Jun 28 12:24:58 2024 - n = 168, Fri Jun 28 12:24:58 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:24:58 2024 - process use time: 0.026000 s
+Fri Jun 28 12:24:58 2024 - n = 169, Fri Jun 28 12:24:58 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:24:58 2024 - process use time: 0.028000 s
+Fri Jun 28 12:24:58 2024 - n = 170, Fri Jun 28 12:24:58 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:24:58 2024 - process use time: 0.027000 s
+Fri Jun 28 12:24:58 2024 - n = 171, Fri Jun 28 12:24:58 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:24:58 2024 - process use time: 0.031000 s
+Fri Jun 28 12:24:58 2024 - n = 172, Fri Jun 28 12:24:58 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:24:58 2024 - process use time: 0.028000 s
+Fri Jun 28 12:24:58 2024 - n = 173, Fri Jun 28 12:24:58 2024 - save_nth_S1_1 process use time: 0.004000 s
+Fri Jun 28 12:24:58 2024 - process use time: 0.030000 s
+Fri Jun 28 12:24:58 2024 - n = 174, Fri Jun 28 12:24:58 2024 - save_nth_S1_1 process use time: 0.004000 s
+Fri Jun 28 12:24:58 2024 - process use time: 0.032000 s
+Fri Jun 28 12:24:58 2024 - n = 175, Fri Jun 28 12:24:58 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:24:58 2024 - process use time: 0.028000 s
+Fri Jun 28 12:24:58 2024 - n = 176, Fri Jun 28 12:24:58 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:24:58 2024 - process use time: 0.027000 s
+Fri Jun 28 12:24:58 2024 - n = 177, Fri Jun 28 12:24:58 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:24:58 2024 - process use time: 0.029000 s
+Fri Jun 28 12:24:58 2024 - n = 178, Fri Jun 28 12:24:58 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:24:58 2024 - process use time: 0.031000 s
+Fri Jun 28 12:24:58 2024 - n = 179, Fri Jun 28 12:24:58 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:24:58 2024 - process use time: 0.034000 s
+Fri Jun 28 12:24:58 2024 - n = 180, Fri Jun 28 12:24:58 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:24:58 2024 - process use time: 0.031000 s
+Fri Jun 28 12:24:58 2024 - n = 181, Fri Jun 28 12:24:58 2024 - save_nth_S1_1 process use time: 0.004000 s
+Fri Jun 28 12:24:58 2024 - process use time: 0.031000 s
+Fri Jun 28 12:24:58 2024 - n = 182, Fri Jun 28 12:24:58 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:24:58 2024 - process use time: 0.031000 s
+Fri Jun 28 12:24:58 2024 - n = 183, Fri Jun 28 12:24:58 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:24:58 2024 - process use time: 0.029000 s
+Fri Jun 28 12:24:58 2024 - n = 184, Fri Jun 28 12:24:58 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:24:58 2024 - process use time: 0.030000 s
+Fri Jun 28 12:24:58 2024 - n = 185, Fri Jun 28 12:24:58 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:24:58 2024 - process use time: 0.030000 s
+Fri Jun 28 12:24:58 2024 - n = 186, Fri Jun 28 12:24:58 2024 - save_nth_S1_1 process use time: 0.004000 s
+Fri Jun 28 12:24:58 2024 - process use time: 0.037000 s
+Fri Jun 28 12:24:58 2024 - n = 187, Fri Jun 28 12:24:58 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:24:58 2024 - process use time: 0.032000 s
+Fri Jun 28 12:24:58 2024 - n = 188, Fri Jun 28 12:24:58 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:24:58 2024 - process use time: 0.039000 s
+Fri Jun 28 12:24:58 2024 - n = 189, Fri Jun 28 12:24:58 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:24:58 2024 - process use time: 0.033000 s
+Fri Jun 28 12:24:58 2024 - n = 190, Fri Jun 28 12:24:58 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:24:58 2024 - process use time: 0.034000 s
+Fri Jun 28 12:24:58 2024 - n = 191, Fri Jun 28 12:24:58 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:24:58 2024 - process use time: 0.032000 s
+Fri Jun 28 12:24:58 2024 - n = 192, Fri Jun 28 12:24:58 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:24:58 2024 - process use time: 0.034000 s
+Fri Jun 28 12:24:58 2024 - n = 193, Fri Jun 28 12:24:59 2024 - save_nth_S1_1 process use time: 0.083000 s
+Fri Jun 28 12:24:59 2024 - process use time: 0.115000 s
+Fri Jun 28 12:24:59 2024 - n = 194, Fri Jun 28 12:24:59 2024 - save_nth_S1_1 process use time: 0.004000 s
+Fri Jun 28 12:24:59 2024 - process use time: 0.042000 s
+Fri Jun 28 12:24:59 2024 - n = 195, Fri Jun 28 12:24:59 2024 - save_nth_S1_1 process use time: 0.017000 s
+Fri Jun 28 12:24:59 2024 - process use time: 0.052000 s
+Fri Jun 28 12:24:59 2024 - n = 196, Fri Jun 28 12:24:59 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:24:59 2024 - process use time: 0.039000 s
+Fri Jun 28 12:24:59 2024 - n = 197, Fri Jun 28 12:24:59 2024 - save_nth_S1_1 process use time: 0.010000 s
+Fri Jun 28 12:24:59 2024 - process use time: 0.045000 s
+Fri Jun 28 12:24:59 2024 - n = 198, Fri Jun 28 12:24:59 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:24:59 2024 - process use time: 0.039000 s
+Fri Jun 28 12:24:59 2024 - n = 199, Fri Jun 28 12:24:59 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:24:59 2024 - process use time: 0.039000 s
+Fri Jun 28 12:24:59 2024 - n = 200, Fri Jun 28 12:24:59 2024 - save_nth_S1_1 process use time: 0.029000 s
+Fri Jun 28 12:24:59 2024 - process use time: 0.066000 s
+Fri Jun 28 12:24:59 2024 - n = 201, Fri Jun 28 12:24:59 2024 - save_nth_S1_1 process use time: 0.004000 s
+Fri Jun 28 12:24:59 2024 - process use time: 0.038000 s
+Fri Jun 28 12:24:59 2024 - n = 202, Fri Jun 28 12:24:59 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:24:59 2024 - process use time: 0.035000 s
+Fri Jun 28 12:24:59 2024 - n = 203, Fri Jun 28 12:24:59 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:24:59 2024 - process use time: 0.039000 s
+Fri Jun 28 12:24:59 2024 - n = 204, Fri Jun 28 12:24:59 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:24:59 2024 - process use time: 0.038000 s
+Fri Jun 28 12:24:59 2024 - n = 205, Fri Jun 28 12:24:59 2024 - save_nth_S1_1 process use time: 0.004000 s
+Fri Jun 28 12:24:59 2024 - process use time: 0.042000 s
+Fri Jun 28 12:24:59 2024 - n = 206, Fri Jun 28 12:24:59 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:24:59 2024 - process use time: 0.037000 s
+Fri Jun 28 12:24:59 2024 - n = 207, Fri Jun 28 12:24:59 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:24:59 2024 - process use time: 0.039000 s
+Fri Jun 28 12:24:59 2024 - n = 208, Fri Jun 28 12:24:59 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:24:59 2024 - process use time: 0.037000 s
+Fri Jun 28 12:24:59 2024 - n = 209, Fri Jun 28 12:24:59 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:24:59 2024 - process use time: 0.039000 s
+Fri Jun 28 12:24:59 2024 - n = 210, Fri Jun 28 12:24:59 2024 - save_nth_S1_1 process use time: 0.012000 s
+Fri Jun 28 12:24:59 2024 - process use time: 0.049000 s
+Fri Jun 28 12:24:59 2024 - n = 211, Fri Jun 28 12:24:59 2024 - save_nth_S1_1 process use time: 0.004000 s
+Fri Jun 28 12:24:59 2024 - process use time: 0.042000 s
+Fri Jun 28 12:24:59 2024 - n = 212, Fri Jun 28 12:24:59 2024 - save_nth_S1_1 process use time: 0.023000 s
+Fri Jun 28 12:24:59 2024 - process use time: 0.062000 s
+Fri Jun 28 12:24:59 2024 - n = 213, Fri Jun 28 12:24:59 2024 - save_nth_S1_1 process use time: 0.007000 s
+Fri Jun 28 12:24:59 2024 - process use time: 0.050000 s
+Fri Jun 28 12:24:59 2024 - n = 214, Fri Jun 28 12:24:59 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:24:59 2024 - process use time: 0.041000 s
+Fri Jun 28 12:24:59 2024 - n = 215, Fri Jun 28 12:24:59 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:24:59 2024 - process use time: 0.041000 s
+Fri Jun 28 12:25:00 2024 - n = 216, Fri Jun 28 12:25:00 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:00 2024 - process use time: 0.045000 s
+Fri Jun 28 12:25:00 2024 - n = 217, Fri Jun 28 12:25:00 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:25:00 2024 - process use time: 0.040000 s
+Fri Jun 28 12:25:00 2024 - n = 218, Fri Jun 28 12:25:00 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:00 2024 - process use time: 0.044000 s
+Fri Jun 28 12:25:00 2024 - n = 219, Fri Jun 28 12:25:00 2024 - save_nth_S1_1 process use time: 0.012000 s
+Fri Jun 28 12:25:00 2024 - process use time: 0.051000 s
+Fri Jun 28 12:25:00 2024 - n = 220, Fri Jun 28 12:25:00 2024 - save_nth_S1_1 process use time: 0.004000 s
+Fri Jun 28 12:25:00 2024 - process use time: 0.045000 s
+Fri Jun 28 12:25:00 2024 - n = 221, Fri Jun 28 12:25:00 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:25:00 2024 - process use time: 0.042000 s
+Fri Jun 28 12:25:00 2024 - n = 222, Fri Jun 28 12:25:00 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:00 2024 - process use time: 0.048000 s
+Fri Jun 28 12:25:00 2024 - n = 223, Fri Jun 28 12:25:00 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:00 2024 - process use time: 0.091000 s
+Fri Jun 28 12:25:00 2024 - n = 224, Fri Jun 28 12:25:00 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:00 2024 - process use time: 0.046000 s
+Fri Jun 28 12:25:00 2024 - n = 225, Fri Jun 28 12:25:00 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:00 2024 - process use time: 0.053000 s
+Fri Jun 28 12:25:00 2024 - n = 226, Fri Jun 28 12:25:00 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:25:00 2024 - process use time: 0.043000 s
+Fri Jun 28 12:25:00 2024 - n = 227, Fri Jun 28 12:25:00 2024 - save_nth_S1_1 process use time: 0.006000 s
+Fri Jun 28 12:25:00 2024 - process use time: 0.048000 s
+Fri Jun 28 12:25:00 2024 - n = 228, Fri Jun 28 12:25:00 2024 - save_nth_S1_1 process use time: 0.004000 s
+Fri Jun 28 12:25:00 2024 - process use time: 0.043000 s
+Fri Jun 28 12:25:00 2024 - n = 229, Fri Jun 28 12:25:00 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:00 2024 - process use time: 0.046000 s
+Fri Jun 28 12:25:00 2024 - n = 230, Fri Jun 28 12:25:00 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:00 2024 - process use time: 0.044000 s
+Fri Jun 28 12:25:00 2024 - n = 231, Fri Jun 28 12:25:00 2024 - save_nth_S1_1 process use time: 0.004000 s
+Fri Jun 28 12:25:00 2024 - process use time: 0.045000 s
+Fri Jun 28 12:25:00 2024 - n = 232, Fri Jun 28 12:25:00 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:00 2024 - process use time: 0.049000 s
+Fri Jun 28 12:25:00 2024 - n = 233, Fri Jun 28 12:25:00 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:25:00 2024 - process use time: 0.045000 s
+Fri Jun 28 12:25:00 2024 - n = 234, Fri Jun 28 12:25:00 2024 - save_nth_S1_1 process use time: 0.001000 s
+Fri Jun 28 12:25:00 2024 - process use time: 0.046000 s
+Fri Jun 28 12:25:00 2024 - n = 235, Fri Jun 28 12:25:00 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:25:00 2024 - process use time: 0.047000 s
+Fri Jun 28 12:25:00 2024 - n = 236, Fri Jun 28 12:25:00 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:25:00 2024 - process use time: 0.048000 s
+Fri Jun 28 12:25:01 2024 - n = 237, Fri Jun 28 12:25:01 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:25:01 2024 - process use time: 0.045000 s
+Fri Jun 28 12:25:01 2024 - n = 238, Fri Jun 28 12:25:01 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:01 2024 - process use time: 0.049000 s
+Fri Jun 28 12:25:01 2024 - n = 239, Fri Jun 28 12:25:01 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:25:01 2024 - process use time: 0.045000 s
+Fri Jun 28 12:25:01 2024 - n = 240, Fri Jun 28 12:25:01 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:25:01 2024 - process use time: 0.051000 s
+Fri Jun 28 12:25:01 2024 - n = 241, Fri Jun 28 12:25:01 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:25:01 2024 - process use time: 0.046000 s
+Fri Jun 28 12:25:01 2024 - n = 242, Fri Jun 28 12:25:01 2024 - save_nth_S1_1 process use time: 0.012000 s
+Fri Jun 28 12:25:01 2024 - process use time: 0.059000 s
+Fri Jun 28 12:25:01 2024 - n = 243, Fri Jun 28 12:25:01 2024 - save_nth_S1_1 process use time: 0.004000 s
+Fri Jun 28 12:25:01 2024 - process use time: 0.057000 s
+Fri Jun 28 12:25:01 2024 - n = 244, Fri Jun 28 12:25:01 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:25:01 2024 - process use time: 0.048000 s
+Fri Jun 28 12:25:01 2024 - n = 245, Fri Jun 28 12:25:01 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:01 2024 - process use time: 0.056000 s
+Fri Jun 28 12:25:01 2024 - n = 246, Fri Jun 28 12:25:01 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:01 2024 - process use time: 0.048000 s
+Fri Jun 28 12:25:01 2024 - n = 247, Fri Jun 28 12:25:01 2024 - save_nth_S1_1 process use time: 0.009000 s
+Fri Jun 28 12:25:01 2024 - process use time: 0.057000 s
+Fri Jun 28 12:25:01 2024 - n = 248, Fri Jun 28 12:25:01 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:25:01 2024 - process use time: 0.049000 s
+Fri Jun 28 12:25:01 2024 - n = 249, Fri Jun 28 12:25:01 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:01 2024 - process use time: 0.053000 s
+Fri Jun 28 12:25:01 2024 - n = 250, Fri Jun 28 12:25:01 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:25:01 2024 - process use time: 0.105000 s
+Fri Jun 28 12:25:01 2024 - n = 251, Fri Jun 28 12:25:01 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:25:01 2024 - process use time: 0.058000 s
+Fri Jun 28 12:25:01 2024 - n = 252, Fri Jun 28 12:25:01 2024 - save_nth_S1_1 process use time: 0.012000 s
+Fri Jun 28 12:25:01 2024 - process use time: 0.061000 s
+Fri Jun 28 12:25:01 2024 - n = 253, Fri Jun 28 12:25:01 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:01 2024 - process use time: 0.052000 s
+Fri Jun 28 12:25:01 2024 - n = 254, Fri Jun 28 12:25:01 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:01 2024 - process use time: 0.057000 s
+Fri Jun 28 12:25:02 2024 - n = 255, Fri Jun 28 12:25:02 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:02 2024 - process use time: 0.053000 s
+Fri Jun 28 12:25:02 2024 - n = 256, Fri Jun 28 12:25:02 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:25:02 2024 - process use time: 0.056000 s
+Fri Jun 28 12:25:02 2024 - n = 257, Fri Jun 28 12:25:02 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:02 2024 - process use time: 0.059000 s
+Fri Jun 28 12:25:02 2024 - n = 258, Fri Jun 28 12:25:02 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:25:02 2024 - process use time: 0.064000 s
+Fri Jun 28 12:25:02 2024 - n = 259, Fri Jun 28 12:25:02 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:02 2024 - process use time: 0.055000 s
+Fri Jun 28 12:25:02 2024 - n = 260, Fri Jun 28 12:25:02 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:02 2024 - process use time: 0.057000 s
+Fri Jun 28 12:25:02 2024 - n = 261, Fri Jun 28 12:25:02 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:25:02 2024 - process use time: 0.057000 s
+Fri Jun 28 12:25:02 2024 - n = 262, Fri Jun 28 12:25:02 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:02 2024 - process use time: 0.058000 s
+Fri Jun 28 12:25:02 2024 - n = 263, Fri Jun 28 12:25:02 2024 - save_nth_S1_1 process use time: 0.004000 s
+Fri Jun 28 12:25:02 2024 - process use time: 0.061000 s
+Fri Jun 28 12:25:02 2024 - n = 264, Fri Jun 28 12:25:02 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:02 2024 - process use time: 0.056000 s
+Fri Jun 28 12:25:02 2024 - n = 265, Fri Jun 28 12:25:02 2024 - save_nth_S1_1 process use time: 0.017000 s
+Fri Jun 28 12:25:02 2024 - process use time: 0.075000 s
+Fri Jun 28 12:25:02 2024 - n = 266, Fri Jun 28 12:25:02 2024 - save_nth_S1_1 process use time: 0.004000 s
+Fri Jun 28 12:25:02 2024 - process use time: 0.065000 s
+Fri Jun 28 12:25:02 2024 - n = 267, Fri Jun 28 12:25:02 2024 - save_nth_S1_1 process use time: 0.005000 s
+Fri Jun 28 12:25:02 2024 - process use time: 0.063000 s
+Fri Jun 28 12:25:02 2024 - n = 268, Fri Jun 28 12:25:02 2024 - save_nth_S1_1 process use time: 0.016000 s
+Fri Jun 28 12:25:02 2024 - process use time: 0.075000 s
+Fri Jun 28 12:25:02 2024 - n = 269, Fri Jun 28 12:25:02 2024 - save_nth_S1_1 process use time: 0.005000 s
+Fri Jun 28 12:25:02 2024 - process use time: 0.063000 s
+Fri Jun 28 12:25:02 2024 - n = 270, Fri Jun 28 12:25:02 2024 - save_nth_S1_1 process use time: 0.013000 s
+Fri Jun 28 12:25:02 2024 - process use time: 0.072000 s
+Fri Jun 28 12:25:03 2024 - n = 271, Fri Jun 28 12:25:03 2024 - save_nth_S1_1 process use time: 0.013000 s
+Fri Jun 28 12:25:03 2024 - process use time: 0.137000 s
+Fri Jun 28 12:25:03 2024 - n = 272, Fri Jun 28 12:25:03 2024 - save_nth_S1_1 process use time: 0.012000 s
+Fri Jun 28 12:25:03 2024 - process use time: 0.074000 s
+Fri Jun 28 12:25:03 2024 - n = 273, Fri Jun 28 12:25:03 2024 - save_nth_S1_1 process use time: 0.012000 s
+Fri Jun 28 12:25:03 2024 - process use time: 0.068000 s
+Fri Jun 28 12:25:03 2024 - n = 274, Fri Jun 28 12:25:03 2024 - save_nth_S1_1 process use time: 0.007000 s
+Fri Jun 28 12:25:03 2024 - process use time: 0.065000 s
+Fri Jun 28 12:25:03 2024 - n = 275, Fri Jun 28 12:25:03 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:25:03 2024 - process use time: 0.059000 s
+Fri Jun 28 12:25:03 2024 - n = 276, Fri Jun 28 12:25:03 2024 - save_nth_S1_1 process use time: 0.012000 s
+Fri Jun 28 12:25:03 2024 - process use time: 0.073000 s
+Fri Jun 28 12:25:03 2024 - n = 277, Fri Jun 28 12:25:03 2024 - save_nth_S1_1 process use time: 0.011000 s
+Fri Jun 28 12:25:03 2024 - process use time: 0.074000 s
+Fri Jun 28 12:25:03 2024 - n = 278, Fri Jun 28 12:25:03 2024 - save_nth_S1_1 process use time: 0.015000 s
+Fri Jun 28 12:25:03 2024 - process use time: 0.079000 s
+Fri Jun 28 12:25:03 2024 - n = 279, Fri Jun 28 12:25:03 2024 - save_nth_S1_1 process use time: 0.012000 s
+Fri Jun 28 12:25:03 2024 - process use time: 0.072000 s
+Fri Jun 28 12:25:03 2024 - n = 280, Fri Jun 28 12:25:03 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:03 2024 - process use time: 0.069000 s
+Fri Jun 28 12:25:03 2024 - n = 281, Fri Jun 28 12:25:03 2024 - save_nth_S1_1 process use time: 0.027000 s
+Fri Jun 28 12:25:03 2024 - process use time: 0.091000 s
+Fri Jun 28 12:25:03 2024 - n = 282, Fri Jun 28 12:25:03 2024 - save_nth_S1_1 process use time: 0.010000 s
+Fri Jun 28 12:25:03 2024 - process use time: 0.075000 s
+Fri Jun 28 12:25:03 2024 - n = 283, Fri Jun 28 12:25:03 2024 - save_nth_S1_1 process use time: 0.009000 s
+Fri Jun 28 12:25:03 2024 - process use time: 0.075000 s
+Fri Jun 28 12:25:04 2024 - n = 284, Fri Jun 28 12:25:04 2024 - save_nth_S1_1 process use time: 0.019000 s
+Fri Jun 28 12:25:04 2024 - process use time: 0.083000 s
+Fri Jun 28 12:25:04 2024 - n = 285, Fri Jun 28 12:25:04 2024 - save_nth_S1_1 process use time: 0.011000 s
+Fri Jun 28 12:25:04 2024 - process use time: 0.076000 s
+Fri Jun 28 12:25:04 2024 - n = 286, Fri Jun 28 12:25:04 2024 - save_nth_S1_1 process use time: 0.012000 s
+Fri Jun 28 12:25:04 2024 - process use time: 0.077000 s
+Fri Jun 28 12:25:04 2024 - n = 287, Fri Jun 28 12:25:04 2024 - save_nth_S1_1 process use time: 0.006000 s
+Fri Jun 28 12:25:04 2024 - process use time: 0.073000 s
+Fri Jun 28 12:25:04 2024 - n = 288, Fri Jun 28 12:25:04 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:04 2024 - process use time: 0.103000 s
+Fri Jun 28 12:25:04 2024 - n = 289, Fri Jun 28 12:25:04 2024 - save_nth_S1_1 process use time: 0.009000 s
+Fri Jun 28 12:25:04 2024 - process use time: 0.085000 s
+Fri Jun 28 12:25:04 2024 - n = 290, Fri Jun 28 12:25:04 2024 - save_nth_S1_1 process use time: 0.010000 s
+Fri Jun 28 12:25:04 2024 - process use time: 0.076000 s
+Fri Jun 28 12:25:04 2024 - n = 291, Fri Jun 28 12:25:04 2024 - save_nth_S1_1 process use time: 0.011000 s
+Fri Jun 28 12:25:04 2024 - process use time: 0.079000 s
+Fri Jun 28 12:25:04 2024 - n = 292, Fri Jun 28 12:25:04 2024 - save_nth_S1_1 process use time: 0.005000 s
+Fri Jun 28 12:25:04 2024 - process use time: 0.071000 s
+Fri Jun 28 12:25:04 2024 - n = 293, Fri Jun 28 12:25:04 2024 - save_nth_S1_1 process use time: 0.008000 s
+Fri Jun 28 12:25:04 2024 - process use time: 0.078000 s
+Fri Jun 28 12:25:04 2024 - n = 294, Fri Jun 28 12:25:04 2024 - save_nth_S1_1 process use time: 0.018000 s
+Fri Jun 28 12:25:04 2024 - process use time: 0.085000 s
+Fri Jun 28 12:25:04 2024 - n = 295, Fri Jun 28 12:25:04 2024 - save_nth_S1_1 process use time: 0.007000 s
+Fri Jun 28 12:25:04 2024 - process use time: 0.080000 s
+Fri Jun 28 12:25:05 2024 - n = 296, Fri Jun 28 12:25:05 2024 - save_nth_S1_1 process use time: 0.010000 s
+Fri Jun 28 12:25:05 2024 - process use time: 0.078000 s
+Fri Jun 28 12:25:05 2024 - n = 297, Fri Jun 28 12:25:05 2024 - save_nth_S1_1 process use time: 0.015000 s
+Fri Jun 28 12:25:05 2024 - process use time: 0.086000 s
+Fri Jun 28 12:25:05 2024 - n = 298, Fri Jun 28 12:25:05 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:25:05 2024 - process use time: 0.071000 s
+Fri Jun 28 12:25:05 2024 - n = 299, Fri Jun 28 12:25:05 2024 - save_nth_S1_1 process use time: 0.012000 s
+Fri Jun 28 12:25:05 2024 - process use time: 0.083000 s
+Fri Jun 28 12:25:05 2024 - n = 300, Fri Jun 28 12:25:05 2024 - save_nth_S1_1 process use time: 0.010000 s
+Fri Jun 28 12:25:05 2024 - process use time: 0.081000 s
+Fri Jun 28 12:25:05 2024 - n = 301, Fri Jun 28 12:25:05 2024 - save_nth_S1_1 process use time: 0.014000 s
+Fri Jun 28 12:25:05 2024 - process use time: 0.089000 s
+Fri Jun 28 12:25:05 2024 - n = 302, Fri Jun 28 12:25:05 2024 - save_nth_S1_1 process use time: 0.046000 s
+Fri Jun 28 12:25:05 2024 - process use time: 0.119000 s
+Fri Jun 28 12:25:05 2024 - n = 303, Fri Jun 28 12:25:05 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:05 2024 - process use time: 0.074000 s
+Fri Jun 28 12:25:05 2024 - n = 304, Fri Jun 28 12:25:05 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:25:05 2024 - process use time: 0.074000 s
+Fri Jun 28 12:25:05 2024 - n = 305, Fri Jun 28 12:25:05 2024 - save_nth_S1_1 process use time: 0.019000 s
+Fri Jun 28 12:25:05 2024 - process use time: 0.157000 s
+Fri Jun 28 12:25:05 2024 - n = 306, Fri Jun 28 12:25:05 2024 - save_nth_S1_1 process use time: 0.014000 s
+Fri Jun 28 12:25:05 2024 - process use time: 0.092000 s
+Fri Jun 28 12:25:06 2024 - n = 307, Fri Jun 28 12:25:06 2024 - save_nth_S1_1 process use time: 0.011000 s
+Fri Jun 28 12:25:06 2024 - process use time: 0.087000 s
+Fri Jun 28 12:25:06 2024 - n = 308, Fri Jun 28 12:25:06 2024 - save_nth_S1_1 process use time: 0.007000 s
+Fri Jun 28 12:25:06 2024 - process use time: 0.083000 s
+Fri Jun 28 12:25:06 2024 - n = 309, Fri Jun 28 12:25:06 2024 - save_nth_S1_1 process use time: 0.016000 s
+Fri Jun 28 12:25:06 2024 - process use time: 0.092000 s
+Fri Jun 28 12:25:06 2024 - n = 310, Fri Jun 28 12:25:06 2024 - save_nth_S1_1 process use time: 0.010000 s
+Fri Jun 28 12:25:06 2024 - process use time: 0.101000 s
+Fri Jun 28 12:25:06 2024 - n = 311, Fri Jun 28 12:25:06 2024 - save_nth_S1_1 process use time: 0.018000 s
+Fri Jun 28 12:25:06 2024 - process use time: 0.097000 s
+Fri Jun 28 12:25:06 2024 - n = 312, Fri Jun 28 12:25:06 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:06 2024 - process use time: 0.091000 s
+Fri Jun 28 12:25:06 2024 - n = 313, Fri Jun 28 12:25:06 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:06 2024 - process use time: 0.080000 s
+Fri Jun 28 12:25:06 2024 - n = 314, Fri Jun 28 12:25:06 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:06 2024 - process use time: 0.080000 s
+Fri Jun 28 12:25:06 2024 - n = 315, Fri Jun 28 12:25:06 2024 - save_nth_S1_1 process use time: 0.009000 s
+Fri Jun 28 12:25:06 2024 - process use time: 0.087000 s
+Fri Jun 28 12:25:06 2024 - n = 316, Fri Jun 28 12:25:06 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:06 2024 - process use time: 0.083000 s
+Fri Jun 28 12:25:06 2024 - n = 317, Fri Jun 28 12:25:06 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:25:06 2024 - process use time: 0.082000 s
+Fri Jun 28 12:25:06 2024 - n = 318, Fri Jun 28 12:25:06 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:06 2024 - process use time: 0.088000 s
+Fri Jun 28 12:25:07 2024 - n = 319, Fri Jun 28 12:25:07 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:07 2024 - process use time: 0.082000 s
+Fri Jun 28 12:25:07 2024 - n = 320, Fri Jun 28 12:25:07 2024 - save_nth_S1_1 process use time: 0.015000 s
+Fri Jun 28 12:25:07 2024 - process use time: 0.123000 s
+Fri Jun 28 12:25:07 2024 - n = 321, Fri Jun 28 12:25:07 2024 - save_nth_S1_1 process use time: 0.013000 s
+Fri Jun 28 12:25:07 2024 - process use time: 0.096000 s
+Fri Jun 28 12:25:07 2024 - n = 322, Fri Jun 28 12:25:07 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:07 2024 - process use time: 0.085000 s
+Fri Jun 28 12:25:07 2024 - n = 323, Fri Jun 28 12:25:07 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:07 2024 - process use time: 0.088000 s
+Fri Jun 28 12:25:07 2024 - n = 324, Fri Jun 28 12:25:07 2024 - save_nth_S1_1 process use time: 0.005000 s
+Fri Jun 28 12:25:07 2024 - process use time: 0.088000 s
+Fri Jun 28 12:25:07 2024 - n = 325, Fri Jun 28 12:25:07 2024 - save_nth_S1_1 process use time: 0.004000 s
+Fri Jun 28 12:25:07 2024 - process use time: 0.084000 s
+Fri Jun 28 12:25:07 2024 - n = 326, Fri Jun 28 12:25:07 2024 - save_nth_S1_1 process use time: 0.004000 s
+Fri Jun 28 12:25:07 2024 - process use time: 0.087000 s
+Fri Jun 28 12:25:07 2024 - n = 327, Fri Jun 28 12:25:07 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:07 2024 - process use time: 0.089000 s
+Fri Jun 28 12:25:07 2024 - n = 328, Fri Jun 28 12:25:07 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:07 2024 - process use time: 0.090000 s
+Fri Jun 28 12:25:07 2024 - n = 329, Fri Jun 28 12:25:08 2024 - save_nth_S1_1 process use time: 0.004000 s
+Fri Jun 28 12:25:08 2024 - process use time: 0.093000 s
+Fri Jun 28 12:25:08 2024 - n = 330, Fri Jun 28 12:25:08 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:25:08 2024 - process use time: 0.090000 s
+Fri Jun 28 12:25:08 2024 - n = 331, Fri Jun 28 12:25:08 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:08 2024 - process use time: 0.089000 s
+Fri Jun 28 12:25:08 2024 - n = 332, Fri Jun 28 12:25:08 2024 - save_nth_S1_1 process use time: 0.047000 s
+Fri Jun 28 12:25:08 2024 - process use time: 0.135000 s
+Fri Jun 28 12:25:08 2024 - n = 333, Fri Jun 28 12:25:08 2024 - save_nth_S1_1 process use time: 0.026000 s
+Fri Jun 28 12:25:08 2024 - process use time: 0.114000 s
+Fri Jun 28 12:25:08 2024 - n = 334, Fri Jun 28 12:25:08 2024 - save_nth_S1_1 process use time: 0.004000 s
+Fri Jun 28 12:25:08 2024 - process use time: 0.164000 s
+Fri Jun 28 12:25:08 2024 - n = 335, Fri Jun 28 12:25:08 2024 - save_nth_S1_1 process use time: 0.009000 s
+Fri Jun 28 12:25:08 2024 - process use time: 0.098000 s
+Fri Jun 28 12:25:08 2024 - n = 336, Fri Jun 28 12:25:08 2024 - save_nth_S1_1 process use time: 0.008000 s
+Fri Jun 28 12:25:08 2024 - process use time: 0.097000 s
+Fri Jun 28 12:25:08 2024 - n = 337, Fri Jun 28 12:25:08 2024 - save_nth_S1_1 process use time: 0.019000 s
+Fri Jun 28 12:25:08 2024 - process use time: 0.108000 s
+Fri Jun 28 12:25:09 2024 - n = 338, Fri Jun 28 12:25:09 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:09 2024 - process use time: 0.194000 s
+Fri Jun 28 12:25:09 2024 - n = 339, Fri Jun 28 12:25:09 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:25:09 2024 - process use time: 0.106000 s
+Fri Jun 28 12:25:09 2024 - n = 340, Fri Jun 28 12:25:09 2024 - save_nth_S1_1 process use time: 0.012000 s
+Fri Jun 28 12:25:09 2024 - process use time: 0.102000 s
+Fri Jun 28 12:25:09 2024 - n = 341, Fri Jun 28 12:25:09 2024 - save_nth_S1_1 process use time: 0.012000 s
+Fri Jun 28 12:25:09 2024 - process use time: 0.108000 s
+Fri Jun 28 12:25:09 2024 - n = 342, Fri Jun 28 12:25:09 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:09 2024 - process use time: 0.097000 s
+Fri Jun 28 12:25:09 2024 - n = 343, Fri Jun 28 12:25:09 2024 - save_nth_S1_1 process use time: 0.009000 s
+Fri Jun 28 12:25:09 2024 - process use time: 0.103000 s
+Fri Jun 28 12:25:09 2024 - n = 344, Fri Jun 28 12:25:09 2024 - save_nth_S1_1 process use time: 0.004000 s
+Fri Jun 28 12:25:09 2024 - process use time: 0.096000 s
+Fri Jun 28 12:25:09 2024 - n = 345, Fri Jun 28 12:25:09 2024 - save_nth_S1_1 process use time: 0.009000 s
+Fri Jun 28 12:25:09 2024 - process use time: 0.105000 s
+Fri Jun 28 12:25:09 2024 - n = 346, Fri Jun 28 12:25:09 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:25:09 2024 - process use time: 0.123000 s
+Fri Jun 28 12:25:10 2024 - n = 347, Fri Jun 28 12:25:10 2024 - save_nth_S1_1 process use time: 0.020000 s
+Fri Jun 28 12:25:10 2024 - process use time: 0.122000 s
+Fri Jun 28 12:25:10 2024 - n = 348, Fri Jun 28 12:25:10 2024 - save_nth_S1_1 process use time: 0.005000 s
+Fri Jun 28 12:25:10 2024 - process use time: 0.100000 s
+Fri Jun 28 12:25:10 2024 - n = 349, Fri Jun 28 12:25:10 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:10 2024 - process use time: 0.100000 s
+Fri Jun 28 12:25:10 2024 - n = 350, Fri Jun 28 12:25:10 2024 - save_nth_S1_1 process use time: 0.029000 s
+Fri Jun 28 12:25:10 2024 - process use time: 0.127000 s
+Fri Jun 28 12:25:10 2024 - n = 351, Fri Jun 28 12:25:10 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:10 2024 - process use time: 0.110000 s
+Fri Jun 28 12:25:10 2024 - n = 352, Fri Jun 28 12:25:10 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:10 2024 - process use time: 0.099000 s
+Fri Jun 28 12:25:10 2024 - n = 353, Fri Jun 28 12:25:10 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:25:10 2024 - process use time: 0.101000 s
+Fri Jun 28 12:25:10 2024 - n = 354, Fri Jun 28 12:25:10 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:10 2024 - process use time: 0.101000 s
+Fri Jun 28 12:25:10 2024 - n = 355, Fri Jun 28 12:25:10 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:10 2024 - process use time: 0.102000 s
+Fri Jun 28 12:25:10 2024 - n = 356, Fri Jun 28 12:25:10 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:10 2024 - process use time: 0.102000 s
+Fri Jun 28 12:25:11 2024 - n = 357, Fri Jun 28 12:25:11 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:11 2024 - process use time: 0.105000 s
+Fri Jun 28 12:25:11 2024 - n = 358, Fri Jun 28 12:25:11 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:11 2024 - process use time: 0.103000 s
+Fri Jun 28 12:25:11 2024 - n = 359, Fri Jun 28 12:25:11 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:11 2024 - process use time: 0.105000 s
+Fri Jun 28 12:25:11 2024 - n = 360, Fri Jun 28 12:25:11 2024 - save_nth_S1_1 process use time: 0.013000 s
+Fri Jun 28 12:25:11 2024 - process use time: 0.114000 s
+Fri Jun 28 12:25:11 2024 - n = 361, Fri Jun 28 12:25:11 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:25:11 2024 - process use time: 0.107000 s
+Fri Jun 28 12:25:11 2024 - n = 362, Fri Jun 28 12:25:11 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:11 2024 - process use time: 0.104000 s
+Fri Jun 28 12:25:11 2024 - n = 363, Fri Jun 28 12:25:11 2024 - save_nth_S1_1 process use time: 0.012000 s
+Fri Jun 28 12:25:11 2024 - process use time: 0.112000 s
+Fri Jun 28 12:25:11 2024 - n = 364, Fri Jun 28 12:25:11 2024 - save_nth_S1_1 process use time: 0.008000 s
+Fri Jun 28 12:25:11 2024 - process use time: 0.109000 s
+Fri Jun 28 12:25:11 2024 - n = 365, Fri Jun 28 12:25:11 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:11 2024 - process use time: 0.104000 s
+Fri Jun 28 12:25:12 2024 - n = 366, Fri Jun 28 12:25:12 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:12 2024 - process use time: 0.114000 s
+Fri Jun 28 12:25:12 2024 - n = 367, Fri Jun 28 12:25:12 2024 - save_nth_S1_1 process use time: 0.007000 s
+Fri Jun 28 12:25:12 2024 - process use time: 0.110000 s
+Fri Jun 28 12:25:12 2024 - n = 368, Fri Jun 28 12:25:12 2024 - save_nth_S1_1 process use time: 0.044000 s
+Fri Jun 28 12:25:12 2024 - process use time: 0.150000 s
+Fri Jun 28 12:25:12 2024 - n = 369, Fri Jun 28 12:25:12 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:12 2024 - process use time: 0.111000 s
+Fri Jun 28 12:25:12 2024 - n = 370, Fri Jun 28 12:25:12 2024 - save_nth_S1_1 process use time: 0.005000 s
+Fri Jun 28 12:25:12 2024 - process use time: 0.108000 s
+Fri Jun 28 12:25:12 2024 - n = 371, Fri Jun 28 12:25:12 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:12 2024 - process use time: 0.112000 s
+Fri Jun 28 12:25:12 2024 - n = 372, Fri Jun 28 12:25:12 2024 - save_nth_S1_1 process use time: 0.011000 s
+Fri Jun 28 12:25:12 2024 - process use time: 0.118000 s
+Fri Jun 28 12:25:12 2024 - n = 373, Fri Jun 28 12:25:12 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:12 2024 - process use time: 0.111000 s
+Fri Jun 28 12:25:12 2024 - n = 374, Fri Jun 28 12:25:13 2024 - save_nth_S1_1 process use time: 0.004000 s
+Fri Jun 28 12:25:13 2024 - process use time: 0.114000 s
+Fri Jun 28 12:25:13 2024 - n = 375, Fri Jun 28 12:25:13 2024 - save_nth_S1_1 process use time: 0.035000 s
+Fri Jun 28 12:25:13 2024 - process use time: 0.148000 s
+Fri Jun 28 12:25:13 2024 - n = 376, Fri Jun 28 12:25:13 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:13 2024 - process use time: 0.111000 s
+Fri Jun 28 12:25:13 2024 - n = 377, Fri Jun 28 12:25:13 2024 - save_nth_S1_1 process use time: 0.012000 s
+Fri Jun 28 12:25:13 2024 - process use time: 0.123000 s
+Fri Jun 28 12:25:13 2024 - n = 378, Fri Jun 28 12:25:13 2024 - save_nth_S1_1 process use time: 0.008000 s
+Fri Jun 28 12:25:13 2024 - process use time: 0.120000 s
+Fri Jun 28 12:25:13 2024 - n = 379, Fri Jun 28 12:25:13 2024 - save_nth_S1_1 process use time: 0.015000 s
+Fri Jun 28 12:25:13 2024 - process use time: 0.132000 s
+Fri Jun 28 12:25:13 2024 - n = 380, Fri Jun 28 12:25:13 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:13 2024 - process use time: 0.116000 s
+Fri Jun 28 12:25:13 2024 - n = 381, Fri Jun 28 12:25:13 2024 - save_nth_S1_1 process use time: 0.008000 s
+Fri Jun 28 12:25:13 2024 - process use time: 0.127000 s
+Fri Jun 28 12:25:13 2024 - n = 382, Fri Jun 28 12:25:14 2024 - save_nth_S1_1 process use time: 0.015000 s
+Fri Jun 28 12:25:14 2024 - process use time: 0.131000 s
+Fri Jun 28 12:25:14 2024 - n = 383, Fri Jun 28 12:25:14 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:14 2024 - process use time: 0.123000 s
+Fri Jun 28 12:25:14 2024 - n = 384, Fri Jun 28 12:25:14 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:14 2024 - process use time: 0.114000 s
+Fri Jun 28 12:25:14 2024 - n = 385, Fri Jun 28 12:25:14 2024 - save_nth_S1_1 process use time: 0.016000 s
+Fri Jun 28 12:25:14 2024 - process use time: 0.132000 s
+Fri Jun 28 12:25:14 2024 - n = 386, Fri Jun 28 12:25:14 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:14 2024 - process use time: 0.117000 s
+Fri Jun 28 12:25:14 2024 - n = 387, Fri Jun 28 12:25:14 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:25:14 2024 - process use time: 0.122000 s
+Fri Jun 28 12:25:14 2024 - n = 388, Fri Jun 28 12:25:14 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:14 2024 - process use time: 0.122000 s
+Fri Jun 28 12:25:14 2024 - n = 389, Fri Jun 28 12:25:14 2024 - save_nth_S1_1 process use time: 0.007000 s
+Fri Jun 28 12:25:14 2024 - process use time: 0.127000 s
+Fri Jun 28 12:25:14 2024 - n = 390, Fri Jun 28 12:25:14 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:14 2024 - process use time: 0.120000 s
+Fri Jun 28 12:25:15 2024 - n = 391, Fri Jun 28 12:25:15 2024 - save_nth_S1_1 process use time: 0.004000 s
+Fri Jun 28 12:25:15 2024 - process use time: 0.125000 s
+Fri Jun 28 12:25:15 2024 - n = 392, Fri Jun 28 12:25:15 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:15 2024 - process use time: 0.120000 s
+Fri Jun 28 12:25:15 2024 - n = 393, Fri Jun 28 12:25:15 2024 - save_nth_S1_1 process use time: 0.010000 s
+Fri Jun 28 12:25:15 2024 - process use time: 0.130000 s
+Fri Jun 28 12:25:15 2024 - n = 394, Fri Jun 28 12:25:15 2024 - save_nth_S1_1 process use time: 0.015000 s
+Fri Jun 28 12:25:15 2024 - process use time: 0.136000 s
+Fri Jun 28 12:25:15 2024 - n = 395, Fri Jun 28 12:25:15 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:25:15 2024 - process use time: 0.132000 s
+Fri Jun 28 12:25:15 2024 - n = 396, Fri Jun 28 12:25:15 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:15 2024 - process use time: 0.122000 s
+Fri Jun 28 12:25:15 2024 - n = 397, Fri Jun 28 12:25:15 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:25:15 2024 - process use time: 0.126000 s
+Fri Jun 28 12:25:16 2024 - n = 398, Fri Jun 28 12:25:16 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:25:16 2024 - process use time: 0.126000 s
+Fri Jun 28 12:25:16 2024 - n = 399, Fri Jun 28 12:25:16 2024 - save_nth_S1_1 process use time: 0.006000 s
+Fri Jun 28 12:25:16 2024 - process use time: 0.136000 s
+Fri Jun 28 12:25:16 2024 - n = 400, Fri Jun 28 12:25:16 2024 - save_nth_S1_1 process use time: 0.013000 s
+Fri Jun 28 12:25:16 2024 - process use time: 0.146000 s
+Fri Jun 28 12:25:16 2024 - n = 401, Fri Jun 28 12:25:16 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:16 2024 - process use time: 0.141000 s
+Fri Jun 28 12:25:16 2024 - n = 402, Fri Jun 28 12:25:16 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:16 2024 - process use time: 0.142000 s
+Fri Jun 28 12:25:16 2024 - n = 403, Fri Jun 28 12:25:16 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:16 2024 - process use time: 0.146000 s
+Fri Jun 28 12:25:16 2024 - n = 404, Fri Jun 28 12:25:16 2024 - save_nth_S1_1 process use time: 0.005000 s
+Fri Jun 28 12:25:16 2024 - process use time: 0.146000 s
+Fri Jun 28 12:25:16 2024 - n = 405, Fri Jun 28 12:25:17 2024 - save_nth_S1_1 process use time: 0.016000 s
+Fri Jun 28 12:25:17 2024 - process use time: 0.155000 s
+Fri Jun 28 12:25:17 2024 - n = 406, Fri Jun 28 12:25:17 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:17 2024 - process use time: 0.150000 s
+Fri Jun 28 12:25:17 2024 - n = 407, Fri Jun 28 12:25:17 2024 - save_nth_S1_1 process use time: 0.015000 s
+Fri Jun 28 12:25:17 2024 - process use time: 0.157000 s
+Fri Jun 28 12:25:17 2024 - n = 408, Fri Jun 28 12:25:17 2024 - save_nth_S1_1 process use time: 0.004000 s
+Fri Jun 28 12:25:17 2024 - process use time: 0.182000 s
+Fri Jun 28 12:25:17 2024 - n = 409, Fri Jun 28 12:25:17 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:17 2024 - process use time: 0.175000 s
+Fri Jun 28 12:25:17 2024 - n = 410, Fri Jun 28 12:25:17 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:17 2024 - process use time: 0.150000 s
+Fri Jun 28 12:25:17 2024 - n = 411, Fri Jun 28 12:25:17 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:17 2024 - process use time: 0.153000 s
+Fri Jun 28 12:25:18 2024 - n = 412, Fri Jun 28 12:25:18 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:18 2024 - process use time: 0.149000 s
+Fri Jun 28 12:25:18 2024 - n = 413, Fri Jun 28 12:25:18 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:18 2024 - process use time: 0.146000 s
+Fri Jun 28 12:25:18 2024 - n = 414, Fri Jun 28 12:25:18 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:18 2024 - process use time: 0.144000 s
+Fri Jun 28 12:25:18 2024 - n = 415, Fri Jun 28 12:25:18 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:25:18 2024 - process use time: 0.150000 s
+Fri Jun 28 12:25:18 2024 - n = 416, Fri Jun 28 12:25:18 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:18 2024 - process use time: 0.152000 s
+Fri Jun 28 12:25:18 2024 - n = 417, Fri Jun 28 12:25:18 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:18 2024 - process use time: 0.151000 s
+Fri Jun 28 12:25:19 2024 - n = 418, Fri Jun 28 12:25:19 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:19 2024 - process use time: 0.150000 s
+Fri Jun 28 12:25:19 2024 - n = 419, Fri Jun 28 12:25:19 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:25:19 2024 - process use time: 0.154000 s
+Fri Jun 28 12:25:19 2024 - n = 420, Fri Jun 28 12:25:19 2024 - save_nth_S1_1 process use time: 0.004000 s
+Fri Jun 28 12:25:19 2024 - process use time: 0.153000 s
+Fri Jun 28 12:25:19 2024 - n = 421, Fri Jun 28 12:25:19 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:25:19 2024 - process use time: 0.150000 s
+Fri Jun 28 12:25:19 2024 - n = 422, Fri Jun 28 12:25:19 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:19 2024 - process use time: 0.154000 s
+Fri Jun 28 12:25:19 2024 - n = 423, Fri Jun 28 12:25:19 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:19 2024 - process use time: 0.161000 s
+Fri Jun 28 12:25:19 2024 - n = 424, Fri Jun 28 12:25:19 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:19 2024 - process use time: 0.153000 s
+Fri Jun 28 12:25:20 2024 - n = 425, Fri Jun 28 12:25:20 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:20 2024 - process use time: 0.160000 s
+Fri Jun 28 12:25:20 2024 - n = 426, Fri Jun 28 12:25:20 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:20 2024 - process use time: 0.158000 s
+Fri Jun 28 12:25:20 2024 - n = 427, Fri Jun 28 12:25:20 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:20 2024 - process use time: 0.159000 s
+Fri Jun 28 12:25:20 2024 - n = 428, Fri Jun 28 12:25:20 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:20 2024 - process use time: 0.164000 s
+Fri Jun 28 12:25:20 2024 - n = 429, Fri Jun 28 12:25:20 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:20 2024 - process use time: 0.231000 s
+Fri Jun 28 12:25:20 2024 - n = 430, Fri Jun 28 12:25:20 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:20 2024 - process use time: 0.164000 s
+Fri Jun 28 12:25:21 2024 - n = 431, Fri Jun 28 12:25:21 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:21 2024 - process use time: 0.165000 s
+Fri Jun 28 12:25:21 2024 - n = 432, Fri Jun 28 12:25:21 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:21 2024 - process use time: 0.164000 s
+Fri Jun 28 12:25:21 2024 - n = 433, Fri Jun 28 12:25:21 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:21 2024 - process use time: 0.164000 s
+Fri Jun 28 12:25:21 2024 - n = 434, Fri Jun 28 12:25:21 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:21 2024 - process use time: 0.161000 s
+Fri Jun 28 12:25:21 2024 - n = 435, Fri Jun 28 12:25:21 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:21 2024 - process use time: 0.170000 s
+Fri Jun 28 12:25:21 2024 - n = 436, Fri Jun 28 12:25:21 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:21 2024 - process use time: 0.163000 s
+Fri Jun 28 12:25:22 2024 - n = 437, Fri Jun 28 12:25:22 2024 - save_nth_S1_1 process use time: 0.004000 s
+Fri Jun 28 12:25:22 2024 - process use time: 0.208000 s
+Fri Jun 28 12:25:22 2024 - n = 438, Fri Jun 28 12:25:22 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:22 2024 - process use time: 0.168000 s
+Fri Jun 28 12:25:22 2024 - n = 439, Fri Jun 28 12:25:22 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:22 2024 - process use time: 0.168000 s
+Fri Jun 28 12:25:22 2024 - n = 440, Fri Jun 28 12:25:22 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:22 2024 - process use time: 0.167000 s
+Fri Jun 28 12:25:22 2024 - n = 441, Fri Jun 28 12:25:22 2024 - save_nth_S1_1 process use time: 0.022000 s
+Fri Jun 28 12:25:22 2024 - process use time: 0.188000 s
+Fri Jun 28 12:25:23 2024 - n = 442, Fri Jun 28 12:25:23 2024 - save_nth_S1_1 process use time: 0.004000 s
+Fri Jun 28 12:25:23 2024 - process use time: 0.166000 s
+Fri Jun 28 12:25:23 2024 - n = 443, Fri Jun 28 12:25:23 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:23 2024 - process use time: 0.172000 s
+Fri Jun 28 12:25:23 2024 - n = 444, Fri Jun 28 12:25:23 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:23 2024 - process use time: 0.169000 s
+Fri Jun 28 12:25:23 2024 - n = 445, Fri Jun 28 12:25:23 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:23 2024 - process use time: 0.169000 s
+Fri Jun 28 12:25:23 2024 - n = 446, Fri Jun 28 12:25:23 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:23 2024 - process use time: 0.176000 s
+Fri Jun 28 12:25:23 2024 - n = 447, Fri Jun 28 12:25:23 2024 - save_nth_S1_1 process use time: 0.004000 s
+Fri Jun 28 12:25:23 2024 - process use time: 0.171000 s
+Fri Jun 28 12:25:24 2024 - n = 448, Fri Jun 28 12:25:24 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:24 2024 - process use time: 0.221000 s
+Fri Jun 28 12:25:24 2024 - n = 449, Fri Jun 28 12:25:24 2024 - save_nth_S1_1 process use time: 0.027000 s
+Fri Jun 28 12:25:24 2024 - process use time: 0.203000 s
+Fri Jun 28 12:25:24 2024 - n = 450, Fri Jun 28 12:25:24 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:24 2024 - process use time: 0.178000 s
+Fri Jun 28 12:25:24 2024 - n = 451, Fri Jun 28 12:25:24 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:24 2024 - process use time: 0.173000 s
+Fri Jun 28 12:25:24 2024 - n = 452, Fri Jun 28 12:25:24 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:24 2024 - process use time: 0.228000 s
+Fri Jun 28 12:25:25 2024 - n = 453, Fri Jun 28 12:25:25 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:25 2024 - process use time: 0.179000 s
+Fri Jun 28 12:25:25 2024 - n = 454, Fri Jun 28 12:25:25 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:25 2024 - process use time: 0.190000 s
+Fri Jun 28 12:25:25 2024 - n = 455, Fri Jun 28 12:25:25 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:25 2024 - process use time: 0.179000 s
+Fri Jun 28 12:25:25 2024 - n = 456, Fri Jun 28 12:25:25 2024 - save_nth_S1_1 process use time: 0.004000 s
+Fri Jun 28 12:25:25 2024 - process use time: 0.179000 s
+Fri Jun 28 12:25:25 2024 - n = 457, Fri Jun 28 12:25:25 2024 - save_nth_S1_1 process use time: 0.004000 s
+Fri Jun 28 12:25:25 2024 - process use time: 0.194000 s
+Fri Jun 28 12:25:25 2024 - n = 458, Fri Jun 28 12:25:26 2024 - save_nth_S1_1 process use time: 0.004000 s
+Fri Jun 28 12:25:26 2024 - process use time: 0.183000 s
+Fri Jun 28 12:25:26 2024 - n = 459, Fri Jun 28 12:25:26 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:26 2024 - process use time: 0.185000 s
+Fri Jun 28 12:25:26 2024 - n = 460, Fri Jun 28 12:25:26 2024 - save_nth_S1_1 process use time: 0.019000 s
+Fri Jun 28 12:25:26 2024 - process use time: 0.206000 s
+Fri Jun 28 12:25:26 2024 - n = 461, Fri Jun 28 12:25:26 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:26 2024 - process use time: 0.187000 s
+Fri Jun 28 12:25:26 2024 - n = 462, Fri Jun 28 12:25:26 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:26 2024 - process use time: 0.186000 s
+Fri Jun 28 12:25:26 2024 - n = 463, Fri Jun 28 12:25:26 2024 - save_nth_S1_1 process use time: 0.004000 s
+Fri Jun 28 12:25:26 2024 - process use time: 0.184000 s
+Fri Jun 28 12:25:27 2024 - n = 464, Fri Jun 28 12:25:27 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:27 2024 - process use time: 0.186000 s
+Fri Jun 28 12:25:27 2024 - n = 465, Fri Jun 28 12:25:27 2024 - save_nth_S1_1 process use time: 0.005000 s
+Fri Jun 28 12:25:27 2024 - process use time: 0.196000 s
+Fri Jun 28 12:25:27 2024 - n = 466, Fri Jun 28 12:25:27 2024 - save_nth_S1_1 process use time: 0.004000 s
+Fri Jun 28 12:25:27 2024 - process use time: 0.192000 s
+Fri Jun 28 12:25:27 2024 - n = 467, Fri Jun 28 12:25:27 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:27 2024 - process use time: 0.188000 s
+Fri Jun 28 12:25:27 2024 - n = 468, Fri Jun 28 12:25:27 2024 - save_nth_S1_1 process use time: 0.004000 s
+Fri Jun 28 12:25:27 2024 - process use time: 0.201000 s
+Fri Jun 28 12:25:28 2024 - n = 469, Fri Jun 28 12:25:28 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:28 2024 - process use time: 0.188000 s
+Fri Jun 28 12:25:28 2024 - n = 470, Fri Jun 28 12:25:28 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:28 2024 - process use time: 0.190000 s
+Fri Jun 28 12:25:28 2024 - n = 471, Fri Jun 28 12:25:28 2024 - save_nth_S1_1 process use time: 0.004000 s
+Fri Jun 28 12:25:28 2024 - process use time: 0.189000 s
+Fri Jun 28 12:25:28 2024 - n = 472, Fri Jun 28 12:25:28 2024 - save_nth_S1_1 process use time: 0.006000 s
+Fri Jun 28 12:25:28 2024 - process use time: 0.200000 s
+Fri Jun 28 12:25:28 2024 - n = 473, Fri Jun 28 12:25:28 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:28 2024 - process use time: 0.213000 s
+Fri Jun 28 12:25:29 2024 - n = 474, Fri Jun 28 12:25:29 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:29 2024 - process use time: 0.199000 s
+Fri Jun 28 12:25:29 2024 - n = 475, Fri Jun 28 12:25:29 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:29 2024 - process use time: 0.192000 s
+Fri Jun 28 12:25:29 2024 - n = 476, Fri Jun 28 12:25:29 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:29 2024 - process use time: 0.194000 s
+Fri Jun 28 12:25:29 2024 - n = 477, Fri Jun 28 12:25:29 2024 - save_nth_S1_1 process use time: 0.004000 s
+Fri Jun 28 12:25:29 2024 - process use time: 0.191000 s
+Fri Jun 28 12:25:29 2024 - n = 478, Fri Jun 28 12:25:29 2024 - save_nth_S1_1 process use time: 0.006000 s
+Fri Jun 28 12:25:29 2024 - process use time: 0.203000 s
+Fri Jun 28 12:25:30 2024 - n = 479, Fri Jun 28 12:25:30 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:30 2024 - process use time: 0.197000 s
+Fri Jun 28 12:25:30 2024 - n = 480, Fri Jun 28 12:25:30 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:30 2024 - process use time: 0.198000 s
+Fri Jun 28 12:25:30 2024 - n = 481, Fri Jun 28 12:25:30 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:30 2024 - process use time: 0.211000 s
+Fri Jun 28 12:25:30 2024 - n = 482, Fri Jun 28 12:25:30 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:30 2024 - process use time: 0.198000 s
+Fri Jun 28 12:25:30 2024 - n = 483, Fri Jun 28 12:25:30 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:30 2024 - process use time: 0.204000 s
+Fri Jun 28 12:25:31 2024 - n = 484, Fri Jun 28 12:25:31 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:31 2024 - process use time: 0.201000 s
+Fri Jun 28 12:25:31 2024 - n = 485, Fri Jun 28 12:25:31 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:31 2024 - process use time: 0.202000 s
+Fri Jun 28 12:25:31 2024 - n = 486, Fri Jun 28 12:25:31 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:31 2024 - process use time: 0.205000 s
+Fri Jun 28 12:25:31 2024 - n = 487, Fri Jun 28 12:25:31 2024 - save_nth_S1_1 process use time: 0.004000 s
+Fri Jun 28 12:25:31 2024 - process use time: 0.231000 s
+Fri Jun 28 12:25:31 2024 - n = 488, Fri Jun 28 12:25:31 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:31 2024 - process use time: 0.215000 s
+Fri Jun 28 12:25:32 2024 - n = 489, Fri Jun 28 12:25:32 2024 - save_nth_S1_1 process use time: 0.004000 s
+Fri Jun 28 12:25:32 2024 - process use time: 0.206000 s
+Fri Jun 28 12:25:32 2024 - n = 490, Fri Jun 28 12:25:32 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:32 2024 - process use time: 0.204000 s
+Fri Jun 28 12:25:32 2024 - n = 491, Fri Jun 28 12:25:32 2024 - save_nth_S1_1 process use time: 0.004000 s
+Fri Jun 28 12:25:32 2024 - process use time: 0.214000 s
+Fri Jun 28 12:25:32 2024 - n = 492, Fri Jun 28 12:25:32 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:32 2024 - process use time: 0.205000 s
+Fri Jun 28 12:25:32 2024 - n = 493, Fri Jun 28 12:25:32 2024 - save_nth_S1_1 process use time: 0.002000 s
+Fri Jun 28 12:25:32 2024 - process use time: 0.216000 s
+Fri Jun 28 12:25:33 2024 - n = 494, Fri Jun 28 12:25:33 2024 - save_nth_S1_1 process use time: 0.004000 s
+Fri Jun 28 12:25:33 2024 - process use time: 0.213000 s
+Fri Jun 28 12:25:33 2024 - n = 495, Fri Jun 28 12:25:33 2024 - save_nth_S1_1 process use time: 0.027000 s
+Fri Jun 28 12:25:33 2024 - process use time: 0.243000 s
+Fri Jun 28 12:25:33 2024 - n = 496, Fri Jun 28 12:25:33 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:33 2024 - process use time: 0.209000 s
+Fri Jun 28 12:25:33 2024 - n = 497, Fri Jun 28 12:25:33 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:33 2024 - process use time: 0.219000 s
+Fri Jun 28 12:25:34 2024 - n = 498, Fri Jun 28 12:25:34 2024 - save_nth_S1_1 process use time: 0.004000 s
+Fri Jun 28 12:25:34 2024 - process use time: 0.225000 s
+Fri Jun 28 12:25:34 2024 - n = 499, Fri Jun 28 12:25:34 2024 - save_nth_S1_1 process use time: 0.004000 s
+Fri Jun 28 12:25:34 2024 - process use time: 0.213000 s
+Fri Jun 28 12:25:34 2024 - n = 500, Fri Jun 28 12:25:34 2024 - save_nth_S1_1 process use time: 0.003000 s
+Fri Jun 28 12:25:34 2024 - process use time: 0.220000 s
