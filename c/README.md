@@ -32,17 +32,21 @@ for (k = 1; k <= K; k++) {
 
 ### 数组 S1_1 的元素缓存文件
 
-文件 `output/n_S1_1_cache.bin` 中保存了数组 `S1_1` 的所有元素。数组索引的有效范围可参考：
+文件 `output/S1_1/[n].bin` 中保存了数组 `S1_1` 在 n 时的所有元素，即 `S[n][i][1]` 。数组索引的有效范围可参考：
 
 ```c
-for (i = 0; i <= n; i++) {
-    save_to(file, S1_1[i], i, -1);
+for (n = 1; n <= N; n++) {
+    // S[n][0][1] 一直未被赋值和使用, 其值为 0, 导出是为了之后读取的对齐方便, 无实际计算意义
+    save_to(file, S1_1[0], 0, -1);
+    // S[n][i][1] = S[n-1][i][1] + 1 / n, for 2 <= n <= N, 1 <= i < n
+    for (i = 1; i < n; i++)
+        save_to(file, S1_1[i], i, -1);
+    // S[n][n][1] = T[n-1][1], for 1 <= n <= N, i.e. i = n
+    save_to(file, S1_1[n], n, -1);
 }
 ```
 
 在初始状态中, `S1_1[i]` 表示 `S[1][i][1]` 。在迭代状态中, `S1_1[i]` 表示 `S[n-1][i][1]` 。
-
-由于文件 `n_S1_1_cache.bin` 是以 `wb` 模式打开，即覆写二进制文件。因此该缓存文件最多只会保存 $N$ 个数据，从而可以有效控制缓存数据的增长规模。
 
 ### 日志文件
 
@@ -13657,33 +13661,46 @@ Fri Jun 28 16:51:45 2024 - main process use time: 2 h 37 min 18.983000 s
 ```
 </details>
 
-<details>
-<summary>执行 gmp_Si_2_static.exe 的日志</summary>
+**执行 gmp_Si_2_static.exe 的日志**
 
 ```log
-2
+Sat Jun 29 00:31:24 2024 - 当前算法利用各级 S1_1 仅对给定的部分 n 进行计算, 约消耗 5.6 ~ 5.8 GB 内存
+
+Sat Jun 29 00:31:24 2024 - 2 台电脑运行时，单台电脑单次循环消耗时间服从 t = -0.000562106 n + 1.40402e-06 n^2
+Sat Jun 29 00:31:24 2024 - 2 台电脑运行时，单台电脑累计消耗时间服从 sumT = 0.0833342 n - 0.000203596 n^2 + 2.4687e-07 n^3
+Sat Jun 29 00:31:24 2024 - t(13524) = 250 s = 4 min 10 s, sumT(13524) = 576872 s = 6 day 16 h 16 min 32 s
+
+Sat Jun 29 00:31:24 2024 - 3 台电脑运行时，单台电脑单次循环消耗时间服从 t = -0.000859396 n + 1.59795e-06 n^2 
+Sat Jun 29 00:31:24 2024 - 3 台电脑运行时，单台电脑累计消耗时间服从 sumT = 0.0914364 n - 0.000186365 n^2 + 1.82565e-07 n^3
+Sat Jun 29 00:31:24 2024 - t(13524) = 281.4 s = 4 min 41.3 s, sumT(13524) = 420445.3 s = 4 day 20 h 47 min 25.3 s
+
+Sat Jun 29 00:32:42 2024 - read T process use time: 1 min 18.475000 s
+Sat Jun 29 00:32:42 2024 - 
+step 1: initial finished
+Sat Jun 29 00:32:42 2024 - process use time: 0.041000 s
+Sat Jun 29 00:32:42 2024 - 
+Sat Jun 29 00:32:43 2024 - n = 1000, Sat Jun 29 00:32:43 2024 - process use time: 1.310000 s
+Sat Jun 29 00:32:50 2024 - n = 2000, Sat Jun 29 00:32:50 2024 - process use time: 6.119000 s
+Sat Jun 29 00:33:07 2024 - n = 3000, Sat Jun 29 00:33:07 2024 - process use time: 17.014999 s
+Sat Jun 29 00:33:43 2024 - n = 4000, Sat Jun 29 00:33:43 2024 - process use time: 36.110001 s
+Sat Jun 29 00:34:38 2024 - n = 5000, Sat Jun 29 00:34:38 2024 - process use time: 55.279999 s
+Sat Jun 29 00:36:09 2024 - n = 6000, Sat Jun 29 00:36:09 2024 - process use time: 1 min 30.938000 s
+Sat Jun 29 00:38:18 2024 - n = 7000, Sat Jun 29 00:38:18 2024 - process use time: 2 min 9.334000 s
+Sat Jun 29 00:41:31 2024 - n = 8000, Sat Jun 29 00:41:31 2024 - process use time: 3 min 12.445000 s
+Sat Jun 29 00:45:47 2024 - n = 9000, Sat Jun 29 00:45:47 2024 - process use time: 4 min 15.928000 s
+Sat Jun 29 00:51:20 2024 - n = 10000, Sat Jun 29 00:51:20 2024 - process use time: 5 min 33.113998 s
+Sat Jun 29 00:58:35 2024 - n = 11000, Sat Jun 29 00:58:35 2024 - process use time: 7 min 15.749000 s
+Sat Jun 29 01:07:20 2024 - n = 12000, Sat Jun 29 01:07:20 2024 - process use time: 8 min 44.591999 s
+Sat Jun 29 01:17:22 2024 - n = 13000, Sat Jun 29 01:17:22 2024 - process use time: 10 min 1.647000 s
+Sat Jun 29 01:17:22 2024 - 
+step 2: iteration finishedSat Jun 29 01:17:22 2024 - step 2 process use time: 44 min 39.625000 s
+Sat Jun 29 01:17:22 2024 - 
+Sat Jun 29 01:17:22 2024 - 
+step 3: clear finishedSat Jun 29 01:17:22 2024 - check_solution_S_using_S1_1 process use time: 0.016000 s
+Sat Jun 29 01:17:22 2024 - 
+Sat Jun 29 01:17:22 2024 - check solve S process use time: 44 min 39.688000 s
+Sat Jun 29 01:17:33 2024 - free T process use time: 11.129000 s
+Sat Jun 29 01:17:33 2024 - main process use time: 46 min 9.292000 s
 ```
-</details>
 
-从本版本考虑程序的中断继续，为后续拆解为多进程执行任务做铺垫。算法通过保存各级 `S1_1`, 以便从任意 n 开始重新运行，并保存出为整数的 `S[n][i][k]` 。
-
-### 历史版本 [v1.2](https://github.com/zsben2/esf/releases/tag/v1.2)  的时间估算
-
-设 $n$ 为执行的趟次， $t$ 是该趟执行时间， $s$ 是截至该趟总共执行时间。显然， $n$ 和 $t$ 都能直接在上面的日志里取得， $s$ 需要将某行以前的所以 $t$ 加一下才能得到。使用 [Minitab](https://github.com/zsben2/esf/releases/download/v1.2/Minitab.mpx) 拟合计算，得到下图的拟合式
-
-$$t = 1.60125\times 10^{-6} n ^ 2 - 0.000539289 n $$
-
-![拟合线_ t 与 n](https://github.com/zsben2/esf/assets/63939755/44d662c8-86e0-4366-9997-9a11b246a9ca)
-
-$$s = 4.92881\times 10^{-7} n ^ 3 - 0.000272266 n ^ 2 + 0.134986 n $$
-
-![拟合线_ s 与 n](https://github.com/zsben2/esf/assets/63939755/f3a5dcc3-ee60-4b68-87ba-397f4a010121)
-
-因此可以预测执行到第 $N=13542$ 趟时，需要消耗总时长为
-
-$$\begin{aligned}
-s
-&= 4.92881\times 10^{-7} \times 13542 ^ 3 - 0.000272266 \times 13542 ^ 2 + 0.134986 \times 13542 \\
-&= 1175923.8841302455 \text{ s } \\
-&= 13 \text{ d } 14 \text{ h } 38 \text{ min } 44 \text{ s }
-\end{aligned}$$
+从当前版本开始，将拆分成两个程序来分别跑 `S1_1` 和 `Snik` 。 `gmp计算Si_1.c` 中将全体的 `S1_1` 按照 n 的不同独立存储成 1 个 `[n].bin` 文件。 `gmp计算Si_2.c` 并且实现根据进程数拆分任务。 `gmp计算Si_2.c` 中的宏 `M` 用来设置可以同时执行的进程数。变量 `m` 用来设置执行的进程号， $0\le m < M$ 。这样程序只会执行模 $M$ 同余 $m$ 的 $n$ 。
