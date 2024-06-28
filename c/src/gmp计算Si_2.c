@@ -1,6 +1,6 @@
 #include "tools.h"
 // 可用于并行计算的电脑（或进程）数目（可按需要修改）
-#define M 7
+#define M 1000
 
 void check_solution_S_using_S1_1(mpq_t**, const int);
 void read_S1_1(mpq_t*, const int);
