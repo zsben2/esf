@@ -1,3 +1,3 @@
 cd output
-gmpº∆À„T£®æ≤Ã¨£©.exe
-gmpº∆À„Si£®æ≤Ã¨£©.exe
+gmp_T_static.exe
+gmp_Si_static.exe
