@@ -12,7 +12,7 @@
 
 ### 运行脚本
 
-文件 `run.bat` 用于在 Windows 下运行目录 `output/` 中的 `.exe` 文件，并将日志文件 `log.txt` 、整数校验文件 `integer.txt` 、数组 T 的二进制缓存文件 `T.bin` 输出至 `output/` 目录中。
+文件 `run.bat` 用于在 Windows 下运行目录 `output/` 中的 `.exe` 文件，并将日志文件 `log.txt` 、整数校验文件 `integer.txt` 、数组 T 的二进制缓存文件 `T.bin` 输出至 `output/` 目录中。数组 S1_1 的二进制缓存文件 `[n].bin` 输出至 `output/S1_1/` 目录中。
 
 ### 整数校验文件
 
@@ -52,7 +52,7 @@ for (n = 1; n <= N; n++) {
 
 文件 `output/log.txt` 中会打印出程序执行期间的一些日志。
 
-当前是第 1 版串行代码，需要消耗极大量的内存空间，以至于根本不可能跑下来。下面是一次试跑的日志，可参考其程序运行时间和执行的步骤。
+下面是一次试跑的日志，可参考其程序运行时间和执行的步骤。
 
 <details>
 <summary>执行 gmp_T_static.exe 的日志</summary>
