@@ -101,7 +101,7 @@ Thu Jun 27 16:48:53 2024 - main process use time: 5 min 5.902000 s
 </details>
 
 <details>
-<summary>执行 gmp_Si_1_static.exe 的日志</summary>
+<summary>执行 gmp_Si_1_static.exe 的日志（同 v2.0 的日志）</summary>
 
 ```log
 Fri Jun 28 14:14:26 2024 - 
@@ -13664,43 +13664,83 @@ Fri Jun 28 16:51:45 2024 - main process use time: 2 h 37 min 18.983000 s
 **执行 gmp_Si_2_static.exe 的日志**
 
 ```log
-Sat Jun 29 00:31:24 2024 - 当前算法利用各级 S1_1 仅对给定的部分 n 进行计算, 约消耗 5.6 ~ 5.8 GB 内存
-
-Sat Jun 29 00:31:24 2024 - 2 台电脑运行时，单台电脑单次循环消耗时间服从 t = -0.000562106 n + 1.40402e-06 n^2
-Sat Jun 29 00:31:24 2024 - 2 台电脑运行时，单台电脑累计消耗时间服从 sumT = 0.0833342 n - 0.000203596 n^2 + 2.4687e-07 n^3
-Sat Jun 29 00:31:24 2024 - t(13524) = 250 s = 4 min 10 s, sumT(13524) = 576872 s = 6 day 16 h 16 min 32 s
-
-Sat Jun 29 00:31:24 2024 - 3 台电脑运行时，单台电脑单次循环消耗时间服从 t = -0.000859396 n + 1.59795e-06 n^2 
-Sat Jun 29 00:31:24 2024 - 3 台电脑运行时，单台电脑累计消耗时间服从 sumT = 0.0914364 n - 0.000186365 n^2 + 1.82565e-07 n^3
-Sat Jun 29 00:31:24 2024 - t(13524) = 281.4 s = 4 min 41.3 s, sumT(13524) = 420445.3 s = 4 day 20 h 47 min 25.3 s
-
-Sat Jun 29 00:32:42 2024 - read T process use time: 1 min 18.475000 s
-Sat Jun 29 00:32:42 2024 - 
-step 1: initial finished
-Sat Jun 29 00:32:42 2024 - process use time: 0.041000 s
-Sat Jun 29 00:32:42 2024 - 
-Sat Jun 29 00:32:43 2024 - n = 1000, Sat Jun 29 00:32:43 2024 - process use time: 1.310000 s
-Sat Jun 29 00:32:50 2024 - n = 2000, Sat Jun 29 00:32:50 2024 - process use time: 6.119000 s
-Sat Jun 29 00:33:07 2024 - n = 3000, Sat Jun 29 00:33:07 2024 - process use time: 17.014999 s
-Sat Jun 29 00:33:43 2024 - n = 4000, Sat Jun 29 00:33:43 2024 - process use time: 36.110001 s
-Sat Jun 29 00:34:38 2024 - n = 5000, Sat Jun 29 00:34:38 2024 - process use time: 55.279999 s
-Sat Jun 29 00:36:09 2024 - n = 6000, Sat Jun 29 00:36:09 2024 - process use time: 1 min 30.938000 s
-Sat Jun 29 00:38:18 2024 - n = 7000, Sat Jun 29 00:38:18 2024 - process use time: 2 min 9.334000 s
-Sat Jun 29 00:41:31 2024 - n = 8000, Sat Jun 29 00:41:31 2024 - process use time: 3 min 12.445000 s
-Sat Jun 29 00:45:47 2024 - n = 9000, Sat Jun 29 00:45:47 2024 - process use time: 4 min 15.928000 s
-Sat Jun 29 00:51:20 2024 - n = 10000, Sat Jun 29 00:51:20 2024 - process use time: 5 min 33.113998 s
-Sat Jun 29 00:58:35 2024 - n = 11000, Sat Jun 29 00:58:35 2024 - process use time: 7 min 15.749000 s
-Sat Jun 29 01:07:20 2024 - n = 12000, Sat Jun 29 01:07:20 2024 - process use time: 8 min 44.591999 s
-Sat Jun 29 01:17:22 2024 - n = 13000, Sat Jun 29 01:17:22 2024 - process use time: 10 min 1.647000 s
-Sat Jun 29 01:17:22 2024 - 
-step 2: iteration finishedSat Jun 29 01:17:22 2024 - step 2 process use time: 44 min 39.625000 s
-Sat Jun 29 01:17:22 2024 - 
-Sat Jun 29 01:17:22 2024 - 
-step 3: clear finishedSat Jun 29 01:17:22 2024 - check_solution_S_using_S1_1 process use time: 0.016000 s
-Sat Jun 29 01:17:22 2024 - 
-Sat Jun 29 01:17:22 2024 - check solve S process use time: 44 min 39.688000 s
-Sat Jun 29 01:17:33 2024 - free T process use time: 11.129000 s
-Sat Jun 29 01:17:33 2024 - main process use time: 46 min 9.292000 s
+Wed Jul 17 22:50:29 2024 - 
+Wed Jul 17 22:50:29 2024 - ============================================================
+Wed Jul 17 22:50:29 2024 - 本次作业 m = 0, M = 1000
+Wed Jul 17 22:50:29 2024 - ============================================================
+Wed Jul 17 22:50:29 2024 - 
+Wed Jul 17 22:50:29 2024 - 当前算法利用各级 S1_1 仅对给定的部分 n 进行计算，仅读取需要用到的 T 或计算全量 T 并动态释放内存
+Wed Jul 17 22:50:29 2024 - 当前算法将会缓存下来将要执行的 n, 以便在宕机时可立即从合适的 n 开始重跑
+Wed Jul 17 22:50:29 2024 - 计算 T 且 M = 1 时消耗峰值内存为 2992 MB
+Wed Jul 17 22:50:29 2024 - 读取 T 且 M = 1 时消耗峰值内存为 5.8 GB
+Wed Jul 17 22:50:30 2024 - step 1, k = 1
+Wed Jul 17 22:50:30 2024 - k = 1, process use time: 0.108000 s
+Wed Jul 17 22:50:32 2024 - k = 2, process use time: 2.605000 s
+Wed Jul 17 22:50:37 2024 - k = 3, process use time: 4.512000 s
+Wed Jul 17 22:50:43 2024 - k = 4, process use time: 5.824000 s
+Wed Jul 17 22:50:49 2024 - k = 5, process use time: 6.576000 s
+Wed Jul 17 22:50:56 2024 - k = 6, process use time: 7.375000 s
+Wed Jul 17 22:51:05 2024 - k = 7, process use time: 8.080000 s
+Wed Jul 17 22:51:13 2024 - k = 8, process use time: 8.757000 s
+Wed Jul 17 22:51:23 2024 - k = 9, process use time: 9.275000 s
+Wed Jul 17 22:51:32 2024 - k = 10, process use time: 9.857000 s
+Wed Jul 17 22:51:43 2024 - k = 11, process use time: 10.508000 s
+Wed Jul 17 22:51:54 2024 - k = 12, process use time: 11.051000 s
+Wed Jul 17 22:52:05 2024 - k = 13, process use time: 11.308000 s
+Wed Jul 17 22:52:17 2024 - k = 14, process use time: 11.623000 s
+Wed Jul 17 22:52:29 2024 - k = 15, process use time: 12.009000 s
+Wed Jul 17 22:52:41 2024 - k = 16, process use time: 12.387000 s
+Wed Jul 17 22:52:54 2024 - k = 17, process use time: 12.701000 s
+Wed Jul 17 22:53:07 2024 - k = 18, process use time: 13.082000 s
+Wed Jul 17 22:53:21 2024 - k = 19, process use time: 13.480000 s
+Wed Jul 17 22:53:34 2024 - k = 20, process use time: 13.872000 s
+Wed Jul 17 22:53:49 2024 - k = 21, process use time: 14.034000 s
+Wed Jul 17 22:54:02 2024 - k = 22, process use time: 13.140000 s
+Wed Jul 17 22:54:15 2024 - k = 23, process use time: 13.452000 s
+Wed Jul 17 22:54:28 2024 - k = 24, process use time: 13.239000 s
+Wed Jul 17 22:54:42 2024 - k = 25, process use time: 13.487000 s
+Wed Jul 17 22:54:56 2024 - k = 26, process use time: 13.742000 s
+Wed Jul 17 22:55:09 2024 - k = 27, process use time: 13.907000 s
+Wed Jul 17 22:55:24 2024 - k = 28, process use time: 14.076000 s
+Wed Jul 17 22:55:24 2024 - 
+Wed Jul 17 22:55:24 2024 - step 2
+Wed Jul 17 22:55:24 2024 - 
+Wed Jul 17 22:55:24 2024 - solution_T process use time: 4 min 54.085999 s
+Wed Jul 17 22:55:24 2024 - read T process use time: 4 min 54.861000 s
+Wed Jul 17 22:55:24 2024 - 
+Wed Jul 17 22:55:24 2024 - step 1: initial finished
+Wed Jul 17 22:55:24 2024 - process use time: 0.008000 s
+Wed Jul 17 22:55:24 2024 - 
+Wed Jul 17 22:55:24 2024 - 从 n = 2 开始运行
+Wed Jul 17 22:55:25 2024 - n = 1000, process use time: 0.988000 s
+Wed Jul 17 22:55:30 2024 - n = 2000, process use time: 4.972000 s
+Wed Jul 17 22:55:43 2024 - n = 3000, process use time: 13.139000 s
+Wed Jul 17 22:56:11 2024 - n = 4000, process use time: 27.475000 s
+Wed Jul 17 22:56:58 2024 - n = 5000, process use time: 47.355999 s
+Wed Jul 17 22:58:18 2024 - n = 6000, process use time: 1 min 19.819000 s
+Wed Jul 17 23:00:15 2024 - n = 7000, process use time: 1 min 57.379002 s
+Wed Jul 17 23:03:21 2024 - n = 8000, process use time: 3 min 5.534000 s
+Wed Jul 17 23:07:36 2024 - n = 9000, process use time: 4 min 15.079000 s
+Wed Jul 17 23:13:11 2024 - n = 10000, process use time: 5 min 34.445999 s
+Wed Jul 17 23:20:31 2024 - n = 11000, process use time: 7 min 20.289000 s
+Wed Jul 17 23:30:10 2024 - n = 12000, process use time: 9 min 38.958000 s
+Wed Jul 17 23:41:33 2024 - n = 13000, process use time: 11 min 23.572001 s
+Wed Jul 17 23:41:33 2024 - 
+Wed Jul 17 23:41:33 2024 - step 2: iteration finished
+Wed Jul 17 23:41:33 2024 - step 2 process use time: 46 min 9.016000 s
+Wed Jul 17 23:41:33 2024 - 
+Wed Jul 17 23:41:33 2024 - step 3: clear finished
+Wed Jul 17 23:41:33 2024 - check_solution_S_using_S1_1 process use time: 0.017000 s
+Wed Jul 17 23:41:33 2024 - 
+Wed Jul 17 23:41:33 2024 - check solve S process use time: 46 min 9.052000 s
+Wed Jul 17 23:41:33 2024 - free T process use time: 0.007000 s
+Wed Jul 17 23:41:33 2024 - main process use time: 51 min 3.925000 s
 ```
 
-从当前版本开始，将拆分成两个程序来分别跑 `S1_1` 和 `Snik` 。 `gmp计算Si_1.c` 中将全体的 `S1_1` 按照 n 的不同独立存储成 1 个 `[n].bin` 文件。 `gmp计算Si_2.c` 并且实现根据进程数拆分任务。 `gmp计算Si_2.c` 中的宏 `M` 用来设置可以同时执行的进程数。变量 `m` 用来设置执行的进程号， $0\le m < M$ 。这样程序只会执行模 $M$ 同余 $m$ 的 $n$ 。
+`gmp计算Si_1.c` 中将全体的 `S1_1` 按照 n 的不同独立存储成 1 个 `[n].bin` 文件。同时将 `T[n][1]` 的计算合并入主循环中，不再生成和使用 `T.bin` 文件。
+
+`gmp计算Si_2.c` 实现根据进程数拆分任务。程序 2 中的宏 `M` 用来设置可以同时执行的进程数。变量 `m` 用来设置执行的进程号， $0\le m < M$ 。这样程序只会执行模 $M$ 同余 $m$ 的 $n$ 。
+
+程序 2 将会缓存下来将要执行的 `n`, 以便在宕机时可立即从合适的 `n` 开始重跑。
+
+程序 2 仅读取需要用到的 `T` 或计算全量 `T` 并动态释放不需要使用的内存。函数 `get_part_T` 的第 3 个参数 `is_read_T_file = 0` 或 `1` 决定了是重新计算 `T` 数组还是读 `T.bin` 文件。
