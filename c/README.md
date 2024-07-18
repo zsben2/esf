@@ -16,19 +16,7 @@
 
 ### 整数校验文件
 
-文件 `output/integer.txt` 中会输出经校验为整数的 `T[n][k]` 和 `S[n][i][k]` 。但因为头文件里写死了 `S` 开头，所以在文件 `integer.txt` 中实际打印为  `S[n][k]` 和 `S[n][i][k]` 。
-
-### 数组 T 的元素缓存文件
-
-文件 `output/T.bin` 中保存了数组 `T[n][k]` 的所有元素。数组索引的有效范围可参考：
-
-```c
-for (k = 1; k <= K; k++) {
-    for (n = k; n <= N; n++) {
-        save_to(file, T[n][k], n, k, -1);
-    }
-} 
-```
+文件 `output/integer.txt` 中会输出经校验为整数的 `S[n][i][k]` 。
 
 ### 数组 S1_1 的元素缓存文件
 
@@ -48,57 +36,15 @@ for (n = 1; n <= N; n++) {
 
 在初始状态中, `S1_1[i]` 表示 `S[1][i][1]` 。在迭代状态中, `S1_1[i]` 表示 `S[n-1][i][1]` 。
 
+### 待执行的 n 缓存文件
+
+文件 `output/n.txt` 中保存了下一轮循环将要执行的 n 值，以便在宕机时可立即从合适的 n 开始重跑。当该文件不存在时，默认从 `n = 2` 开始运行。此时将会调用 `S1_1[1]` 即 `output/S1_1/00001.bin` 文件的数据来计算。
+
 ### 日志文件
 
 文件 `output/log.txt` 中会打印出程序执行期间的一些日志。
 
 下面是一次试跑的日志，可参考其程序运行时间和执行的步骤。
-
-<details>
-<summary>执行 gmp_T_static.exe 的日志</summary>
-
-```log
-Thu Jun 27 16:43:47 2024 - step 1, k = 1
-Thu Jun 27 16:43:47 2024 - k = 1, process use time: 0.103000 s
-Thu Jun 27 16:43:50 2024 - k = 2, process use time: 2.356000 s
-Thu Jun 27 16:43:54 2024 - k = 3, process use time: 3.834000 s
-Thu Jun 27 16:43:59 2024 - k = 4, process use time: 5.658000 s
-Thu Jun 27 16:44:05 2024 - k = 5, process use time: 5.884000 s
-Thu Jun 27 16:44:12 2024 - k = 6, process use time: 7.083000 s
-Thu Jun 27 16:44:20 2024 - k = 7, process use time: 7.795000 s
-Thu Jun 27 16:44:28 2024 - k = 8, process use time: 7.590000 s
-Thu Jun 27 16:44:36 2024 - k = 9, process use time: 7.854000 s
-Thu Jun 27 16:44:44 2024 - k = 10, process use time: 8.485000 s
-Thu Jun 27 16:44:53 2024 - k = 11, process use time: 8.692000 s
-Thu Jun 27 16:45:02 2024 - k = 12, process use time: 9.186000 s
-Thu Jun 27 16:45:11 2024 - k = 13, process use time: 9.392000 s
-Thu Jun 27 16:45:21 2024 - k = 14, process use time: 9.712000 s
-Thu Jun 27 16:45:32 2024 - k = 15, process use time: 10.819000 s
-Thu Jun 27 16:45:42 2024 - k = 16, process use time: 10.617000 s
-Thu Jun 27 16:45:53 2024 - k = 17, process use time: 10.639000 s
-Thu Jun 27 16:46:04 2024 - k = 18, process use time: 10.858000 s
-Thu Jun 27 16:46:16 2024 - k = 19, process use time: 11.817000 s
-Thu Jun 27 16:46:27 2024 - k = 20, process use time: 11.397000 s
-Thu Jun 27 16:46:39 2024 - k = 21, process use time: 11.612000 s
-Thu Jun 27 16:46:51 2024 - k = 22, process use time: 11.808000 s
-Thu Jun 27 16:47:03 2024 - k = 23, process use time: 12.095000 s
-Thu Jun 27 16:47:15 2024 - k = 24, process use time: 12.462000 s
-Thu Jun 27 16:47:28 2024 - k = 25, process use time: 12.808000 s
-Thu Jun 27 16:47:40 2024 - k = 26, process use time: 12.563000 s
-Thu Jun 27 16:47:53 2024 - k = 27, process use time: 12.803000 s
-Thu Jun 27 16:48:06 2024 - k = 28, process use time: 12.985000 s
-Thu Jun 27 16:48:06 2024 - 
-Thu Jun 27 16:48:06 2024 - step 2
-Thu Jun 27 16:48:06 2024 - 
-Thu Jun 27 16:48:06 2024 - solution_T process use time: 4 min 19.002001 s
-Thu Jun 27 16:48:06 2024 - solve T process use time: 4 min 19.006001 s
-Thu Jun 27 16:48:52 2024 - save T process use time: 45.862000 s
-Thu Jun 27 16:48:52 2024 - S[1][1] = 1
-Thu Jun 27 16:48:53 2024 - S[3][2] = 1
-Thu Jun 27 16:48:53 2024 - check & free T process use time: 1.028000 s
-Thu Jun 27 16:48:53 2024 - main process use time: 5 min 5.902000 s
-```
-</details>
 
 <details>
 <summary>执行 gmp_Si_1_static.exe 的日志（同 v2.0 的日志）</summary>
