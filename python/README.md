@@ -1,18 +1,18 @@
-±¾¹¤³ÌÊÇ c ³ÌÐòÇ°ºó¹¤×÷µÄÒ»Ð©½Å±¾¡£
+æœ¬å·¥ç¨‹æ˜¯ c ç¨‹åºå‰åŽå·¥ä½œçš„ä¸€äº›è„šæœ¬ã€‚
 
 ### packing.py
 
-±¾³ÌÐòÓÃÓÚ c ³ÌÐòÔËÐÐºóµÄ´ò°ü·Ö·¢¹¤×÷¡£
+æœ¬ç¨‹åºç”¨äºŽ c ç¨‹åºè¿è¡ŒåŽçš„æ‰“åŒ…åˆ†å‘å·¥ä½œã€‚
 
-³ÌÐòµÚ 4 ÐÐµÄ `M` ±íÊ¾¿ÉÒÔÍ¬Ê±Ö´ÐÐ³ÌÐòµÄ½ø³ÌÊý£¨Èç¹ûÒ»²¿¼ÆËã»úÖ»Ö´ÐÐÒ»¸ö½ø³ÌµÄ»°£¬Òà¿É×÷¼ÆËã»úÊý£©¡£±¾³ÌÐò»áÔÚµ±Ç°Ä¿Â¼´´½¨Ò»¸ö `packing/` ÎÄ¼þ¼ÐÀïÃæ´æ·Å $M$ ¸öÑ¹ËõÎÄ¼þ `[m].zip` £¬ÆäÖÐ $0\le m < M$ ¡£Õâ $M$ ¸öÑ¹ËõÎÄ¼þ½âÑ¹ºó¼´ÎªÒ»¸öÍêÕûµÚ $m$ ºÅÈÎÎñËùÐèÒªµÄ ***³ÌÐò 2*** ¼° **Êý¾Ý** ¡£
+ç¨‹åºç¬¬ 4 è¡Œçš„ `M` è¡¨ç¤ºå¯ä»¥åŒæ—¶æ‰§è¡Œç¨‹åºçš„è¿›ç¨‹æ•°ï¼ˆå¦‚æžœä¸€éƒ¨è®¡ç®—æœºåªæ‰§è¡Œä¸€ä¸ªè¿›ç¨‹çš„è¯ï¼Œäº¦å¯ä½œè®¡ç®—æœºæ•°ï¼‰ã€‚æœ¬ç¨‹åºä¼šåœ¨å½“å‰ç›®å½•åˆ›å»ºä¸€ä¸ª `packing/` æ–‡ä»¶å¤¹é‡Œé¢å­˜æ”¾ $M$ ä¸ªåŽ‹ç¼©æ–‡ä»¶ `[m].zip` ï¼Œå…¶ä¸­ $0\le m < M$ ã€‚è¿™ $M$ ä¸ªåŽ‹ç¼©æ–‡ä»¶è§£åŽ‹åŽå³ä¸ºä¸€ä¸ªå®Œæ•´ç¬¬ $m$ å·ä»»åŠ¡æ‰€éœ€è¦çš„ ***ç¨‹åº 2*** åŠ **æ•°æ®** ã€‚
 
-ÉÏÊö ***³ÌÐò 2*** ÊÇÖ¸£º
+ä¸Šè¿° ***ç¨‹åº 2*** æ˜¯æŒ‡ï¼š
 
-1. ±àÒëºÃµÚ $m$ ºÅÈÎÎñµÄ `gmp_Si_2_dynamic.exe` ºÍ `gmp_Si_2_static.exe` ¡£
-2. `gmp_Si_2_dynamic.exe` Ö´ÐÐËùÐèÒªÒÀÀµµÄ `libgmp-10.dll`
-3. *Ê×´Î* ÔËÐÐµÚ $m$ ºÅÈÎÎñµÄËùÓÐÃüÁî½Å±¾ `first-run.bat` ¡£
+1. ç¼–è¯‘å¥½ç¬¬ $m$ å·ä»»åŠ¡çš„ `gmp_Si_2_dynamic.exe` å’Œ `gmp_Si_2_static.exe` ã€‚
+2. `gmp_Si_2_dynamic.exe` æ‰§è¡Œæ‰€éœ€è¦ä¾èµ–çš„ `libgmp-10.dll`
+3. *é¦–æ¬¡* è¿è¡Œç¬¬ $m$ å·ä»»åŠ¡çš„æ‰€æœ‰å‘½ä»¤è„šæœ¬ `first-run.bat` ã€‚
 
-×¢Òâ½Å±¾ `first-run.bat` ½ö¿ÉÓÃÓÚ *Ê×´Î* ÔËÐÐ¸ÃÈÎÎñ£¬ÒòÎª¸Ã½Å±¾»áÉ¾³ý³ÌÐòÉú³ÉµÄ `integer.txt` ÎÄ¼þºÍ `n.txt` ÎÄ¼þ¡£¸Ã½Å±¾µÄÄÚÈÝÈçÏÂ£º
+æ³¨æ„è„šæœ¬ `first-run.bat` ä»…å¯ç”¨äºŽ *é¦–æ¬¡* è¿è¡Œè¯¥ä»»åŠ¡ï¼Œå› ä¸ºè¯¥è„šæœ¬ä¼šåˆ é™¤ç¨‹åºç”Ÿæˆçš„ `integer.txt` æ–‡ä»¶å’Œ `n.txt` æ–‡ä»¶ã€‚è¯¥è„šæœ¬çš„å†…å®¹å¦‚ä¸‹ï¼š
 
 ```shell
 del integer.txt
@@ -21,6 +21,6 @@ gmp_Si_2_static.exe
 pause
 ```
 
-Èç¹û³ÌÐò±»ÖÐ¶Ï£¬ÐèÒª¼ÌÐøÖ´ÐÐµÄ»°£¬ÇëÖ±½ÓÖ´ÐÐ `gmp_Si_2_static.exe` ¡£
+å¦‚æžœç¨‹åºè¢«ä¸­æ–­ï¼Œéœ€è¦ç»§ç»­æ‰§è¡Œçš„è¯ï¼Œè¯·ç›´æŽ¥æ‰§è¡Œ `gmp_Si_2_static.exe` ã€‚
 
-ÉÏÊö **Êý¾Ý** ÊÇÖ¸µÚ $m$ ºÅÈÎÎñ½«ÒªÖ´ÐÐµÄ $n$ ÖµËùÓÃµ½µÄ `S1_1` Êý¾Ý£¬±»´æ·ÅÔÚÎÄ¼þ¼Ð `S1_1/` ÖÐ¡£ÒòÎª³ÌÐòÖ»»áÖ´ÐÐÄ£ $M$ Í¬Óà $m$ µÄ $n$ £¬¶øÖ´ÐÐ $n$ ÐèÒªµ÷ÓÃ `S1_1[n-1]` µÄÊý¾Ý£¬Òò´ËÎÄ¼þ¼Ð `S1_1/` ÖÐ´æ·ÅµÄÊÇ `[n-1].bin` ÎÄ¼þ£¬ÆäÖÐ $n\equiv m (\mod M)$ £¬ $2\le n\le 13542$ ¡££¨ÏÔÈ»£¬ `13542.bin` ½«²»»á±»Ê¹ÓÃ£©
+ä¸Šè¿° **æ•°æ®** æ˜¯æŒ‡ç¬¬ $m$ å·ä»»åŠ¡å°†è¦æ‰§è¡Œçš„ $n$ å€¼æ‰€ç”¨åˆ°çš„ `S1_1` æ•°æ®ï¼Œè¢«å­˜æ”¾åœ¨æ–‡ä»¶å¤¹ `S1_1/` ä¸­ã€‚å› ä¸ºç¨‹åºåªä¼šæ‰§è¡Œæ¨¡ $M$ åŒä½™ $m$ çš„ $n$ ï¼Œè€Œæ‰§è¡Œ $n$ éœ€è¦è°ƒç”¨ `S1_1[n-1]` çš„æ•°æ®ï¼Œå› æ­¤æ–‡ä»¶å¤¹ `S1_1/` ä¸­å­˜æ”¾çš„æ˜¯ `[n-1].bin` æ–‡ä»¶ï¼Œå…¶ä¸­ $n\equiv m \pmod M$ ï¼Œ $2\le n\le 13542$ ã€‚ï¼ˆæ˜¾ç„¶ï¼Œ `13542.bin` å°†ä¸ä¼šè¢«ä½¿ç”¨ï¼‰
