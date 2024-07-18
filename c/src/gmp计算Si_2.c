@@ -1,11 +1,10 @@
 #include "tools.h"
 // 可用于并行计算的电脑（或进程）数目
-// M = 1 时占用5.6 - 5.8 GB 内存
-// M = 5 时占用3.9 - 4.0 GB 内存
-// M = 7 时占用3.6 - 3.7 GB 内存
-// M = 10 时占用3.3 - 3.4 GB 内存
-// M = 15 时占用3.1 - 3.2 GB 内存
-// M = 100 时占用2.8 - 2.9 GB 内存
+// M = 1 时占用 2862 MB 内存
+// M = 5 时占用 1181 MB 内存
+// M = 7 时占用 835 MB 内存
+// M = 10 时占用 590 MB 内存
+// M = 100 时占用 64 MB 内存
 #define M 1000
 
 
@@ -13,7 +12,7 @@ void check_solution_S_using_S1_1(mpq_t**, const int, const char*);
 void read_S1_1(mpq_t*, const int);
 void free_mpq_list(mpq_t*, const int);
 void free_part_T(mpq_t **, const int);
-mpq_t **get_part_T(const char*, const int, const int);
+mpq_t **solve_part_T(const int);
 int is_job_n(const int, const int);
 int is_save_n(const int, const int);
 void save_n(const int, const char*);
@@ -28,12 +27,11 @@ int main() {
     logging("本次作业 m = %d, M = %d\n", m, M);
     logging("============================================================\n");
     logging("\n");
-    logging("当前算法利用各级 S1_1 仅对给定的部分 n 进行计算，仅读取需要用到的 T 或计算全量 T 并动态释放内存\n");
+    logging("当前算法利用各级 S1_1 仅对给定的部分 n 进行计算，仅计算需要用到的 T 并动态释放内存\n");
     logging("当前算法将会缓存下来将要执行的 n, 以便在宕机时可立即从合适的 n 开始重跑\n");
-    logging("计算 T 且 M = 1 时消耗峰值内存为 2992 MB\n");
-    logging("读取 T 且 M = 1 时消耗峰值内存为 5.8 GB\n");
+    logging("当前算法在 M = 1 时消耗峰值内存为 2992 MB\n");
 
-    mpq_t **T = get_part_T("T.bin", m, 0); // 仅保留用到的行列
+    mpq_t **T = solve_part_T(m); // 仅保留用到的行列
 
     print_time(&tk[1], tk[0], "read T");
 
@@ -54,9 +52,14 @@ int main() {
 void check_solution_S_using_S1_1(mpq_t **T, const int m, const char *n_file_name) {
     // 记录开始时间
     clock_t tk[N/M + 2] = {clock()};
+    logging("\n");
+    logging("------------------------------------------------------------\n");
+    logging("正在计算 S[n][i][k]\n");
+    logging("------------------------------------------------------------\n");
+    logging("\n");
+
     mpq_t *S1_1 = mpq_malloc_init_list(N + 1);
     mpq_t *reciprocal = get_reciprocal(N + 1);
-
     logging("\n");
     logging("step 1: initial finished\n");
     print_time(&tk[1], tk[0], "");
@@ -143,46 +146,6 @@ void read_S1_1(mpq_t *S1_1, const int n) {
     fclose(file);
 }
 
-mpq_t **get_part_T(const char *file_name, const int m, const int is_read_T_file) {
-    mpq_t **T;
-    int n;
-    if (is_read_T_file) {
-        T = mpq_ptr_malloc_list(N + 1); // T[n][k] 是 1 <= k <= K, k < n <= N 有效;
-
-        // T[0] 未开辟空间, 仅开辟用到的空间
-        for (n = 1; n <= N; n++) {
-            if (is_save_n(n, m)) {
-                T[n] = mpq_malloc_init_list(K + 1);
-            }
-        }
-
-        int k;
-        mpq_t temp;
-        mpq_init(temp);
-        FILE *file = open_file(file_name, "rb");
-
-        for (k = 1; k <= K; k++) {
-            for (n = k; n <= N; n++) {
-                mpq_read(temp, file);
-                if (is_save_n(n, m)) {
-                    mpq_set(T[n][k], temp);
-                }
-            }
-        }
-
-        mpq_clear(temp);
-        fclose(file);
-    } else {
-        T = solution_T();
-        for (n = 1; n <= N; n++) {
-            if (!is_save_n(n, m)) {
-                free_mpq_list(T[n], K + 1);
-            }
-        }
-    }
-    return T;
-}
-
 void free_part_T(mpq_t **T, const int n) {
     int k;
     free_mpq_list(T[n-1], K + 1);
@@ -219,4 +182,76 @@ int read_n(const char *file_name) {
     fscanf(file, "%d", &n);
     fclose(file);
     return n;
+}
+
+mpq_t **solve_part_T(const int m) {
+    // 记录开始时间
+    clock_t tk[N+2] = {clock()};
+    logging("\n");
+    logging("------------------------------------------------------------\n");
+    logging("正在计算 T[n][k]\n");
+    logging("------------------------------------------------------------\n");
+    logging("预计耗时 4 min 20 s, 消耗 2862 MB 的内存\n");
+    logging("\n");
+
+    int k, n;
+    mpq_t *reciprocal = get_reciprocal(N + 1);
+    // T[n][k] 是 1 <= k <= K, k <= n <= N 有效;
+    mpq_t **T = mpq_ptr_malloc_list(N + 1);
+    // 在迭代中, T1 用于表示 T[n-1], T2 用于表示 T[n]
+    mpq_t *T1 = mpq_malloc_init_list(K + 1);
+    mpq_t *T2 = mpq_malloc_init_list(K + 1);
+    mpq_t *T3 = NULL; // 临时变量
+    char n_value_log[20];
+
+    /*
+    因为在数学算式中有
+    T[1][1] = 1
+    T[n][1] = 1 / n + T[n-1][1] for 2 <= n <= N
+    又因为在初始化变量时有
+    T[0][1] = 0
+    所以
+    (eq1) T[n][1] = 1 / n + T[n-1][1] for 1 <= n <= N
+
+    因为在数学算式中有
+    T[k][k] = 1 / k * T[k-1][k-1] for 2 <= k <= K
+    T[n][k] = 1 / n * T[n-1][k-1] + T[n-1][k] for 2 <= k <= K, k < n <= N
+    又因为在初始化变量时有
+    T[k-1][k] = 0 for 2 <= k <= K, i.e. T[1][2] = T[2][3] = ... = T[K-1][K] = 0
+    所以
+    (eq2) T[n][k] = 1 / n * T[n-1][k-1] + T[n-1][k] for 2 <= k <= K, k <= n <= N
+    */
+    for (n = 1; n <= N; n++) {
+        // k = 1
+eq1:    mpq_add(T2[1], reciprocal[n], T1[1]);
+        // k >= 2
+        for (k = 2; k <= min(n, K); k++) {
+eq2:        mpq_mul(T2[k], reciprocal[n], T1[k-1]);
+            mpq_add(T2[k], T2[k], T1[k]);
+        }
+
+        // 内存管理
+        // 初次保存 n 时, T3 = NULL, 需把 T1 空间缓存下来. 兼容 n = 1 的特殊情况
+        // 再次保存 n 时, T3 保持缓存
+        // 初次不保存 n 时, T3 是缓存的可用空间. 兼容 n = 1 的特殊情况
+        // 再次不保存 n 时, T3 = NULL
+        T3 = T3 ? T3 : T1;
+        T1 = T2;
+        if (is_save_n(n, m)) {
+            T[n] = T2;
+            T2 = mpq_malloc_init_list(K + 1);
+        } else {
+            T2 = T3;
+            T3 = NULL;
+        }
+
+        // sprintf(n_value_log, "n = %d,", n);
+        // print_time(&tk[n], tk[n-1], n_value_log); // 打印时间
+    }
+
+    free_mpq_list(T2, K + 1);
+    free_mpq_list(T3 ? T3 : T1, K + 1);
+    free_mpq_list(reciprocal, N + 1);
+    print_time(&tk[N+1], tk[0], __func__);
+    return T;
 }

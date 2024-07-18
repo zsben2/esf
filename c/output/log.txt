@@ -18711,3 +18711,52 @@ Wed Jul 17 23:41:33 2024 -
 Wed Jul 17 23:41:33 2024 - check solve S process use time: 46 min 9.052000 s
 Wed Jul 17 23:41:33 2024 - free T process use time: 0.007000 s
 Wed Jul 17 23:41:33 2024 - main process use time: 51 min 3.925000 s
+Thu Jul 18 00:46:03 2024 - 
+Thu Jul 18 00:46:03 2024 - ============================================================
+Thu Jul 18 00:46:03 2024 - 本次作业 m = 0, M = 1000
+Thu Jul 18 00:46:03 2024 - ============================================================
+Thu Jul 18 00:46:03 2024 - 
+Thu Jul 18 00:46:03 2024 - 当前算法利用各级 S1_1 仅对给定的部分 n 进行计算，仅计算需要用到的 T 并动态释放内存
+Thu Jul 18 00:46:03 2024 - 当前算法将会缓存下来将要执行的 n, 以便在宕机时可立即从合适的 n 开始重跑
+Thu Jul 18 00:46:03 2024 - 当前算法在 M = 1 时消耗峰值内存为 2992 MB
+Thu Jul 18 00:46:03 2024 - 
+Thu Jul 18 00:46:03 2024 - ------------------------------------------------------------
+Thu Jul 18 00:46:03 2024 - 正在计算 T[n][k]
+Thu Jul 18 00:46:03 2024 - ------------------------------------------------------------
+Thu Jul 18 00:46:03 2024 - 预计耗时 4 min 20 s, 消耗 2862 MB 的内存
+Thu Jul 18 00:46:03 2024 - 
+Thu Jul 18 00:51:49 2024 - solve_part_T process use time: 5 min 46.168999 s
+Thu Jul 18 00:51:49 2024 - read T process use time: 5 min 46.234001 s
+Thu Jul 18 00:51:49 2024 - 
+Thu Jul 18 00:51:49 2024 - ------------------------------------------------------------
+Thu Jul 18 00:51:49 2024 - 正在计算 S[n][i][k]
+Thu Jul 18 00:51:49 2024 - ------------------------------------------------------------
+Thu Jul 18 00:51:49 2024 - 
+Thu Jul 18 00:51:49 2024 - 
+Thu Jul 18 00:51:49 2024 - step 1: initial finished
+Thu Jul 18 00:51:49 2024 - process use time: 0.020000 s
+Thu Jul 18 00:51:49 2024 - 
+Thu Jul 18 00:51:49 2024 - 从 n = 2 开始运行
+Thu Jul 18 00:51:50 2024 - n = 1000, process use time: 1.113000 s
+Thu Jul 18 00:51:57 2024 - n = 2000, process use time: 6.523000 s
+Thu Jul 18 00:52:13 2024 - n = 3000, process use time: 15.826000 s
+Thu Jul 18 00:52:47 2024 - n = 4000, process use time: 34.374001 s
+Thu Jul 18 00:53:47 2024 - n = 5000, process use time: 59.955002 s
+Thu Jul 18 00:55:30 2024 - n = 6000, process use time: 1 min 42.678001 s
+Thu Jul 18 00:58:02 2024 - n = 7000, process use time: 2 min 32.345001 s
+Thu Jul 18 01:01:45 2024 - n = 8000, process use time: 3 min 43.289001 s
+Thu Jul 18 01:06:44 2024 - n = 9000, process use time: 4 min 59.011002 s
+Thu Jul 18 01:13:12 2024 - n = 10000, process use time: 6 min 28.122000 s
+Thu Jul 18 01:21:37 2024 - n = 11000, process use time: 8 min 24.462999 s
+Thu Jul 18 01:30:38 2024 - n = 12000, process use time: 9 min 0.816000 s
+Thu Jul 18 01:41:35 2024 - n = 13000, process use time: 10 min 57.041000 s
+Thu Jul 18 01:41:35 2024 - 
+Thu Jul 18 01:41:35 2024 - step 2: iteration finished
+Thu Jul 18 01:41:35 2024 - step 2 process use time: 49 min 45.594002 s
+Thu Jul 18 01:41:35 2024 - 
+Thu Jul 18 01:41:35 2024 - step 3: clear finished
+Thu Jul 18 01:41:35 2024 - check_solution_S_using_S1_1 process use time: 0.014000 s
+Thu Jul 18 01:41:35 2024 - 
+Thu Jul 18 01:41:35 2024 - check solve S process use time: 49 min 45.639000 s
+Thu Jul 18 01:41:35 2024 - free T process use time: 0.004000 s
+Thu Jul 18 01:41:35 2024 - main process use time: 55 min 31.881001 s
