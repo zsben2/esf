@@ -1,41 +1,41 @@
-from pprint import pprint
+from pprint import pformat
 from tools.number_theory import primes
-from math import ceil, floor, e, exp    # 上下取整
-from tools.ZCBtools import absoluteTime
+from math import ceil, floor, e, exp, log    # 上下取整
+from tools.ZCBtools import getLogger, AbsoluteTime
+from typing import Iterable
 import pickle
+import os
 
+logger = getLogger('output/log.txt')
 N = 50216
-K = 32
-# N = 40000
-# K = 18
+K = floor(e * log(N) + e) # == 32
 
-# 获取索引 i 两边最近的素数列表
-def get_primes_on_both_sides_of_index():
-    n = N // 2
-    # n = N
+
+# 获取索引 i 两边最近的素数列表，n 为最大列表的最大索引
+def generate_primes_on_both_sides_of_index(n:int):
     max_prime_less_than_index = [] # 小于等于索引 i 的最大素数
     min_prime_more_than_index = [] # 大于等于索引 i 的最小素数
-    primes_less_than_100010_iter: iter = primes(max=n+100) # 多取一个比 100000 大的素数: 100003
+    primes_less_than_n_iter: iter = primes(max=n+100) # 多取一个比 n 大的素数
     curr_prime = 0
-    next_prime = next(primes_less_than_100010_iter)
+    next_prime = next(primes_less_than_n_iter)
     for i in range(n+1):
         min_prime_more_than_index.append(next_prime)
         if i == next_prime:
             curr_prime = next_prime
-            next_prime = next(primes_less_than_100010_iter) # 不会报错，因为有 100003
+            next_prime = next(primes_less_than_n_iter) # 不会报错，因为有一个比 n 大的素数
         max_prime_less_than_index.append(curr_prime)
     return max_prime_less_than_index, min_prime_more_than_index
 
-max_prime_less_than_index, min_prime_more_than_index = get_primes_on_both_sides_of_index()
-# 索引值i两端的相邻素数对，p0 <= i <= p1
+max_prime_less_than_index, min_prime_more_than_index = generate_primes_on_both_sides_of_index(N // 2)
 # index_between_prime_pair = list(zip(max_prime_less_than_index, min_prime_more_than_index))
+
 
 # 找满足下列条件的素数 p
 # n/(k+3) < p <= n/(k+1)
 # p > max((k+2)*(k+3)/2, 3*k+8)
-# 其中 1 <= k <= min(n-1, 35)
-# 2 <= n <= 200000
-@absoluteTime
+# 其中 1 <= k <= min(n-1, K)
+# 2 <= n <= N
+@AbsoluteTime(logger)
 def find_prime():
     result = {}
     for k in range(1, K+1): # 1 <= k <= K
@@ -52,7 +52,7 @@ def find_prime():
             # p2 = max_prime_less_than_index[n//(k+1)]
             # 若 n/(k+1) 是小数，则 n//(k+1) 是整数
             # p2 = max_prime_less_than_index[n//(k+1)]
-            # 综上 p2 = max_prime_less_than_index[n//(k+1)]
+            # 综上
             p2 = max_prime_less_than_index[n//(k+1)]
 
             # 若 n/(k+3) 是整数且是素数，由于 p1 不能取 n//(k+3)，因此
@@ -61,7 +61,7 @@ def find_prime():
             # p1 = min_prime_more_than_index[n//(k+3) + 1]
             # 若 n/(k+3) 是小数，则
             # p1 = min_prime_more_than_index[n//(k+3) + 1]
-            # 综上 p1 = min_prime_more_than_index[n//(k+3) + 1]
+            # 综上
             p1 = min_prime_more_than_index[n//(k+3) + 1]
 
             if not p1 <= p2:
@@ -70,18 +70,15 @@ def find_prime():
 
             # 求闭区间 [p1, p2] 中的所有素数
             P: list = intersection_primes(p1, p2)
-            # 降序更有利于下述循环条件的终止
-            P.sort(reverse=True)
 
             # 如果存在素数 p > max((k+2)*(k+3)/2, 3*k+8)
-            for p in P:
-                if p > (k+2) * (k+3) / 2 and p > 3*k + 8:
-                    result[k]['find'].append(n)
-                    break
-            else: # 经由 break 退出不会进来 else 子句，仅当 for 完整跑完后才进
+            if max(P) > max((k+2) * (k+3) / 2, 3*k + 8):
+                result[k]['find'].append(n)
+            else:
                 result[k]['not_find'].append(n)
 
     return result
+
 
 # 求闭区间 [a, b] 中的所有素数
 def intersection_primes(a: float, b: float) -> list:
@@ -95,7 +92,7 @@ def intersection_primes(a: float, b: float) -> list:
 
 
 # 转置
-@absoluteTime
+@AbsoluteTime(logger)
 def transposition(find_prime_result):
     transposition_result = { n: {'find': [], 'not_find': []} for n in range(1, N+1) }
     for k in range(1, K+1):
@@ -113,7 +110,7 @@ def transposition(find_prime_result):
 
 
 # 将字典d的key按照相同的value进行合并，key以元组(a,b)表示闭区间[a,b]
-@absoluteTime
+@AbsoluteTime(logger)
 def reduce_by_value(d: dict):
     reduce_result = {}
     items = list(d.items())
@@ -140,7 +137,7 @@ def reduce_by_value(d: dict):
 
 
 # 在按k分组的字典中，将关于n的离散单点集约化为区间
-@absoluteTime
+@AbsoluteTime(logger)
 def reduce_point_into_interval(find_prime_result):
     reduce_result = {}
     for k, d in find_prime_result.items():
@@ -152,7 +149,7 @@ def reduce_point_into_interval(find_prime_result):
 
 
 # 离散单点集约化为闭区间
-def reduce_interval(points: iter):
+def reduce_interval(points: Iterable):
     result = []
     points = list(points)
     if len(points) == 0:
@@ -168,12 +165,6 @@ def reduce_interval(points: iter):
         last_point = curr_point
     result.append(CloseInterval(interval_left, last_point))
     return result
-
-# def close_interval(interval_left, interval_right):
-#     if interval_left == interval_right: # 单点集
-#         return interval_left
-#     else: # 闭区间
-#         return [interval_left, interval_right]
 
 
 class CloseInterval:
@@ -201,29 +192,39 @@ class CloseInterval:
         return CloseInterval(left, right)
 
 
-
 # 将变量保存到二进制文件中
+@AbsoluteTime(logger)
 def save_as(data, file_name:str):
     with open(file_name, 'wb') as f:
         pickle.dump(data, f)
 
+
 # 从二进制文件中读取数据
+@AbsoluteTime(logger)
 def read_from(file_name:str):
     with open(file_name, 'rb') as f:
         data = pickle.load(f)
     return data
 
 
+# 索引值i两端的相邻素数对，p0 <= i <= p1
+def get_prime_pair_on_both_sides_of_index(i:float) -> tuple:
+    a = max_prime_less_than_index[floor(i)]
+    b = min_prime_more_than_index[ceil(i)]
+    return a, b
+
+
 if __name__ == '__main__':
-    # print(len(list(primes(max=156131))))
-    # print(index_between_prime_pair[ceil(2200/(10+1))])
-    # print(index_between_prime_pair[floor(2200/10)])
-    # result = find_prime() # 需时约 1 min 9.003677 s
-    result = read_from('result.bin')
+    if os.path.exists('output/result.bin'):
+        result = read_from('output/result.bin')
+    else:
+        result = find_prime() # 需时约 1 min 9.003677 s
+        save_as(result, 'output/result.bin')
+
     k_result_dict = reduce_point_into_interval(result) # 需时约 192.926645 ms
+    # save_as(k_result_dict, 'output/k_result_dict.bin')
+    logger.info(pformat(k_result_dict))
+
     n_result_dict = transposition(result) # 需时约 674.047709 ms
-    # save_as(result, 'result.bin')
-    # save_as(k_result_dict, 'k_result_dict.bin')
-    # save_as(n_result_dict, 'n_result_dict.bin')
-    pprint(k_result_dict)
-    pprint(n_result_dict)
+    # save_as(n_result_dict, 'output/n_result_dict.bin')
+    logger.info(pformat(n_result_dict))

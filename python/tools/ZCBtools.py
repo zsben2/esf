@@ -1,7 +1,8 @@
 '''
 赵崇斌工具库 ZCBtools.py
-最后更新日期：2019.6.22
+最后更新日期：2024.07.19
 更新日志：
+2024.07.19 加入函数getLogger
 2019.06.22 重写reduceByKey函数，加入分块功能，原reduceByKey函数重命名为reduceByKey_
 2019.06.21 重写flatten函数，新增非递归的循环版本_flatten2，原递归版本重命名为_flatten1，
            非递归版本平均效率提升5倍以上。将重写的list函数重命名为list_。新增blockReduceByKey函数
@@ -12,15 +13,20 @@
 '''
 from functools import reduce
 from time import strftime, time
+from types import FunctionType
+
 from tqdm import tqdm
 from typing import Union
 from numpy import sqrt
 from multiprocessing import Process, Pool, Queue, Manager
 from collections.abc import Iterator
+import inspect
+import logging
+import os
 
 
 __all__ = ['NOW', 'reduceByKey', 'reduceByKey_', 'flatten', 'pmap', 
-    'absoluteTime', 'list_', 'map_']
+    'absoluteTime', 'list_', 'map_', 'getLogger', 'get_sup_model', 'AbsoluteTime']
 __author__ = '赵崇斌'
 __version__ = '2019.06.22'
 
@@ -48,29 +54,60 @@ def list_(obj):
         return obj.get()
     return list(obj)
 
-def absoluteTime(func):
+
+def _absoluteTime(myprint, func, *args, **kwargs):
+    t1 = time()
+    ret = func(*args, **kwargs)
+    t2 = time()
+    deltaT = t2 - t1
+    if deltaT <= 10 ** -3:
+        myprint('%s函数运行时间：%.6f μs' % (func.__name__, deltaT*10**6))
+    elif deltaT <= 1:
+        myprint('%s函数运行时间：%.6f ms' % (func.__name__, deltaT*10**3))
+    elif deltaT <= 60:
+        myprint('%s函数运行时间：%.6f s' % (func.__name__, deltaT))
+    elif deltaT <= 3600:
+        myprint('%s函数运行时间：%d min %.6f s' % (func.__name__, deltaT//60, deltaT%60))
+    else:
+        myprint('%s函数运行时间：%d h %d min %.6f s' % (func.__name__, deltaT//3600, deltaT%3600//60, deltaT%60))
+    return ret
+
+
+absoluteTime = lambda func: lambda *args, **kwargs: _absoluteTime(print, func, *args, **kwargs)
+absoluteTime.__doc__ = '''
+参数：func——被装饰的函数
+返回：运行函数func所使用的绝对时间长度
+解释：装饰器函数。可参照Mathematica的AbsoluteTime函数
+'''
+
+
+class AbsoluteTime:
     '''
-    参数：func——被装饰的函数
-    返回：运行函数func所使用的绝对时间长度
-    解释：装饰器函数。可参照Mathematica的AbsoluteTime函数
+    装饰器类，可直接装饰函数，也可携带一个Logger再装饰函数。例如：
+    @AbsoluteTime
+    def func1():
+        pass
+    或
+    log = logging.getLogger('test')
+    @AbsoluteTime(log)
+    def func2():
+        pass
+    前者效果等同于直接使用装饰器函数
+    @absoluteTime
+    def func1():
+        pass
     '''
-    def _absoluteTime(*args, **kwargs):
-        t1 = time()
-        ret = func(*args, **kwargs)
-        t2 = time()
-        deltaT = t2 - t1
-        if deltaT <= 10 ** -3:
-            print('%s函数运行时间：%.6f μs' % (func.__name__, deltaT*10**6))
-        elif deltaT <= 1:
-            print('%s函数运行时间：%.6f ms' % (func.__name__, deltaT*10**3))
-        elif deltaT <= 60:
-            print('%s函数运行时间：%.6f s' % (func.__name__, deltaT))
-        elif deltaT <= 3600:
-            print('%s函数运行时间：%d min %.6f s' % (func.__name__, deltaT//60, deltaT%60))
+    def __init__(self, log_or_func:Union[logging.Logger, FunctionType]):
+        self.log_or_func = log_or_func
+
+    def __call__(self, *args, **kwargs):
+        if isinstance(self.log_or_func, logging.Logger):
+            func = args[0]
+            log = self.log_or_func.info
+            return lambda *args, **kwargs: _absoluteTime(log, func, *args, **kwargs)
         else:
-            print('%s函数运行时间：%d h %d min %.6f s' % (func.__name__, deltaT//3600, deltaT%3600//60, deltaT%60))
-        return ret
-    return _absoluteTime
+            func = self.log_or_func
+            return _absoluteTime(print, func, *args, **kwargs)
 
 
 def reduceByKey_(func, args):
@@ -156,8 +193,7 @@ def flatten(args, recursion=False) -> tuple:
     return tuple(_flatten2(args))
 
 
-def reduceByKey(func, iterable,
-                BLOCK:Union[int,float('inf'),float('-inf')]=float('inf')):
+def reduceByKey(func, iterable, BLOCK:Union[int,float]=float('inf')):
     ''' 
     参数：func——二元函数；iterable——可迭代型数据；
          BLOCK——块大小，需为非±1的int或±inf，
@@ -270,6 +306,54 @@ def pmap(f, iterable, processes=4):
     p0.join()
 
     return result
+
+
+# 返回该函数往上数第 level 层调用的调用文件名
+# 默认 level = 1 表示当前调用层的文件名
+def get_sup_model(level=1) -> str:
+    # 根路径
+    root_file_full_path = inspect.stack()[-1].filename
+    root_dir = os.path.dirname(root_file_full_path)
+    # 调用文件的路径
+    sup_file_full_path = inspect.stack()[level].filename
+    # 相对路径
+    relative_path = os.path.relpath(sup_file_full_path, root_dir)
+    # 先去掉末尾的 .py, 再转换路径分隔符
+    python_path = relative_path[:-3].replace('/', '.').replace('\\', '.')
+    return python_path
+
+
+def getLogger(filename='./log.txt',
+              name:Union[str,None]=None,
+              fmt='%(asctime)s - %(name)s - %(funcName)s - %(levelname)s - %(message)s',
+              level='DEBUG') -> logging.Logger:
+    name = get_sup_model(2) if name is None else name
+    # 设置日志器的名字
+    log = logging.getLogger(name)
+    # 设置全局日志级别
+    log.setLevel('DEBUG')
+    # 创建日志记录的格式
+    log_formatter = logging.Formatter(fmt)
+
+    # 创建文件日志记录器，指明日志保存的路径，每个日志文件的最大值，保存的日志文件个数上限
+    file_handle = logging.FileHandler(filename)
+    # 设置文件日志级别
+    file_handle.setLevel(level)
+    # 为创建的日志记录器设置日志记录格式
+    file_handle.setFormatter(log_formatter)
+    # 为全局的日志工具对象添加日志记录器
+    log.addHandler(file_handle)
+
+    # 设置输出日志到控制台
+    control_handler = logging.StreamHandler()
+    # 设置控制台日志级别
+    control_handler.setLevel(level)
+    # 为创建的日志记录器设置日志记录格式
+    control_handler.setFormatter(log_formatter)
+    # 把控制台日志对象添加到logger中
+    log.addHandler(control_handler)
+
+    return log
 
 
 if __name__ == '__main__':
