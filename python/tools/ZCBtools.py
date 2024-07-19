@@ -1,5 +1,5 @@
 '''
-赵崇斌工具库 ZCBtools.py
+工具库 ZCBtools.py
 最后更新日期：2024.07.19
 更新日志：
 2024.07.19 加入函数getLogger, get_sup_model, 类AbsoluteTime。这个类拓展了absoluteTime
