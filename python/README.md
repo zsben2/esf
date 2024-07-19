@@ -1,6 +1,8 @@
+# 编译运行注意
+
 本工程是 C 程序前后工作的一些脚本。
 
-### find_prime.py
+## find_prime.py
 
 `find_prime.py` 的运行将会生成日志文件 `output/log.txt` 和缓存文件 `output/result.bin` 。
 
@@ -95,7 +97,7 @@
 
 
 
-### packing.py
+## packing.py
 
 本程序用于 C 程序运行后的打包分发工作。
 
