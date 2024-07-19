@@ -36,7 +36,7 @@ max_prime_less_than_index, min_prime_more_than_index = generate_primes_on_both_s
 # 其中 1 <= k <= min(n-1, K)
 # 2 <= n <= N
 @AbsoluteTime(logger)
-def find_prime():
+def find_prime() -> dict:
     result = {}
     for k in range(1, K+1): # 1 <= k <= K
         result[k] = {
@@ -93,7 +93,7 @@ def intersection_primes(a: float, b: float) -> list:
 
 # 转置
 @AbsoluteTime(logger)
-def transposition(find_prime_result):
+def transposition(find_prime_result:dict) -> dict:
     transposition_result = { n: {'find': [], 'not_find': []} for n in range(1, N+1) }
     for k in range(1, K+1):
         for n in find_prime_result[k]['find']:
@@ -111,7 +111,7 @@ def transposition(find_prime_result):
 
 # 将字典d的key按照相同的value进行合并，key以元组(a,b)表示闭区间[a,b]
 @AbsoluteTime(logger)
-def reduce_by_value(d: dict):
+def reduce_by_value(d: dict) -> dict:
     reduce_result = {}
     items = list(d.items())
     items.sort()
@@ -138,7 +138,7 @@ def reduce_by_value(d: dict):
 
 # 在按k分组的字典中，将关于n的离散单点集约化为区间
 @AbsoluteTime(logger)
-def reduce_point_into_interval(find_prime_result):
+def reduce_point_into_interval(find_prime_result:dict) -> dict:
     reduce_result = {}
     for k, d in find_prime_result.items():
         reduce_result[k] = {
@@ -214,12 +214,12 @@ def get_prime_pair_on_both_sides_of_index(i:float) -> tuple:
     return a, b
 
 
-if __name__ == '__main__':
-    if os.path.exists('output/result.bin'):
-        result = read_from('output/result.bin')
+def solveN(cache_path:str) -> dict:
+    if os.path.exists(cache_path):
+        result = read_from(cache_path)
     else:
         result = find_prime() # 需时约 1 min 9.003677 s
-        save_as(result, 'output/result.bin')
+        save_as(result, cache_path)
 
     k_result_dict = reduce_point_into_interval(result) # 需时约 192.926645 ms
     # save_as(k_result_dict, 'output/k_result_dict.bin')
@@ -228,3 +228,8 @@ if __name__ == '__main__':
     n_result_dict = transposition(result) # 需时约 674.047709 ms
     # save_as(n_result_dict, 'output/n_result_dict.bin')
     logger.info(pformat(n_result_dict))
+    return n_result_dict
+
+
+if __name__ == '__main__':
+    solveN('output/result.bin')

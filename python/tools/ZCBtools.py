@@ -2,7 +2,8 @@
 赵崇斌工具库 ZCBtools.py
 最后更新日期：2024.07.19
 更新日志：
-2024.07.19 加入函数getLogger
+2024.07.19 加入函数getLogger, get_sup_model, 类AbsoluteTime。这个类拓展了absoluteTime
+           的功能，支持传入一个Logger对象将输出信息打印到日志里
 2019.06.22 重写reduceByKey函数，加入分块功能，原reduceByKey函数重命名为reduceByKey_
 2019.06.21 重写flatten函数，新增非递归的循环版本_flatten2，原递归版本重命名为_flatten1，
            非递归版本平均效率提升5倍以上。将重写的list函数重命名为list_。新增blockReduceByKey函数
@@ -27,8 +28,8 @@ import os
 
 __all__ = ['NOW', 'reduceByKey', 'reduceByKey_', 'flatten', 'pmap', 
     'absoluteTime', 'list_', 'map_', 'getLogger', 'get_sup_model', 'AbsoluteTime']
-__author__ = '赵崇斌'
-__version__ = '2019.06.22'
+__author__ = 'Sunben Chiu'
+__version__ = '2024.07.19'
 
 class __NOW(type):
     def __repr__(self):
